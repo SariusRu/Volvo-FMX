@@ -73,8 +73,8 @@
     ],
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"],
-        ["shaft", "wheelaxleFL", "differential_F", 1, {"connectedWheel":"FL", "breakTriggerBeam":"axle_FL", "friction":8}],
-        ["shaft", "wheelaxleFR", "differential_F", 2, {"connectedWheel":"FR", "breakTriggerBeam":"axle_FR", "friction":8}],
+        ["shaft", "wheelaxleFL", "differentialF1", 1, {"connectedWheel":"FL", "breakTriggerBeam":"axle_FL", "friction":8}],
+        ["shaft", "wheelaxleFR", "differentialF1", 2, {"connectedWheel":"FR", "breakTriggerBeam":"axle_FR", "friction":8}],
     ],
 	
 }

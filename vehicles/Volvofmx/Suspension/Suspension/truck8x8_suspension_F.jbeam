@@ -11,6 +11,9 @@
 		["volvofmx_shock_F","volvofmx_shock_F", "volvofmx Front Shocks+airbags"],
 		["volvofmx_brake_F","volvofmx_brake_F", "volvofmx Front Brakes"],
 		["volvofmx_wheel_F","volvofmx_wheel_F", "volvofmx Front Wheels"],
+		["volvofmx_differential_F_1","volvofmx_differential_F_1", "Volvo FMX Front Differential"],
+		["volvofmx_intershaft_front","volvofmx_intershaft_front", "Volvo FMX Front Differential"],
+		
 	],
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,

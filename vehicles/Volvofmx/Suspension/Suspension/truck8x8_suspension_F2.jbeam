@@ -11,7 +11,7 @@
 		["volvofmx_shock_F2","volvofmx_shock_F2", "volvofmx Front2 Shocks+airbags"],
 		["volvofmx_brake_F2","volvofmx_brake_F2", "volvofmx Front2 Brakes"],
 		["volvofmx_wheel_F2","volvofmx_wheel_F2", "volvofmx Front2 Wheels"],
-		["volvofmx_transfercase_F","volvofmx_transfercase_F", "volvofmx Transfer Case"],
+		["volvofmx_differential_F_2","volvofmx_differential_F_2", "Volvo FMX Front Differential"],
 	],
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
@@ -290,33 +290,5 @@
 			{"breakGroup":""},
 			{"beamPrecompression":1},
 	],
-}
-"volvofmx_transfercase_F": {
-	"information":{
-		"authors":"Jalkku",
-		"name":"volvofmx Transfer front Case",
-	}
-    "slotType" : "volvofmx_transfercase_F",
-	"scalebeamSpring":0.84,
-	"scalebeamDamp":1.3,
-	"scalebeamDeform":1.5,
-	"scalebeamStrength":1.78,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-	],	
-	"differentials": [
-			["wheelName1", 	"wheelName2", "type", "state", "closedTorque", "engineTorqueCoef"],
-			["FL","FR", "lsd", "locked", 15000, 1]
-			["FL2","FR2", "lsd", "locked", 15000, 1]
-			["FL","FL2", "lsd", "locked", 55000, 1]
-			["FR","FR2", "lsd", "locked", 55000, 1]
-			["FL2","RL", "lsd", "locked", 15000, 1]
-			["FR2","RR", "lsd", "locked", 15000, 1]
-	],
-	"hubWheels": [
-            ["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"], 
-			{"propulsed":1}
-	],
-}
 }
 }

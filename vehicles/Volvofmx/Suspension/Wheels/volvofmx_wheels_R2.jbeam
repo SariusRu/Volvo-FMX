@@ -85,9 +85,9 @@
 	"powertrain" : [
         ["type", "name", "inputName", "inputIndex"],
         //rear left axle
-        ["shaft", "wheelaxle_RL_2", "differential_R_2", 1, {"connectedWheel":"R2L", "breakTriggerBeam":"axle_RL_2", "friction":6}]
+        ["shaft", "wheelaxle_RL_2", "differentialR2", 1, {"connectedWheel":"R2L", "breakTriggerBeam":"axle_RL_2", "friction":6}]
         //rear right axle
-        ["shaft", "wheelaxle_RR_2", "differential_R_2", 2, {"connectedWheel":"R2R", "breakTriggerBeam":"axle_RR_2", "friction":6}]
+        ["shaft", "wheelaxle_RR_2", "differentialR2", 2, {"connectedWheel":"R2R", "breakTriggerBeam":"axle_RR_2", "friction":6}]
     ],
 }
 }

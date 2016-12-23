@@ -10,7 +10,7 @@
 		["volvofmx_shock_R2","volvofmx_shock_R2", "volvofmx Rear 2 Shocks+airbags"],
 		["volvofmx_brake_R2","volvofmx_brake_R2", "volvofmx Rear 2 Brakes"],
 		["volvofmx_wheel_R2","volvofmx_wheel_R2", "volvofmx Rear 2 Wheels"],
-		["volvofmx_driveshaft_long","", "Long Driveshaft"],
+		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Long Driveshaft"],
         ["volvofmx_differential_R_2","volvofmx_differential_R_2", "Rear Rear Differential"],
         ["volvofmx_wheel_R_2","volvofmx_wheel_R_2", "Rear Rear Wheels"],
         ["volvofmx_wheeldata_R_2","volvofmx_wheeldata_R_2", "Rear Rear Spindles"{"coreSlot":true}],
