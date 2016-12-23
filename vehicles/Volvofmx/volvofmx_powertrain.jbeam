@@ -2,7 +2,7 @@
     "volvofmx_driveshaft": {
     "information":{
         "authors":"BeamNG",
-        "name":"Driveshaft",
+        "name":"Gearbox Driveshaft",
         "value":550,
     }
     "slotType" : "volvofmx_driveshaft",
@@ -15,14 +15,14 @@
 "volvofmx_transfercase": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Distributor between front and rear",
         "value":900,
     }
     "slotType" : "volvofmx_transfercase_main",
     "slots": [
         ["type", "default", "description"]
-        ["volvofmx_transfercase_front","volvofmx_transfercase_front", "Inter Axle Driveshaft"],
-        ["volvofmx_transfercase_rear","volvofmx_transfercase_rear", "Inter Axle Driveshaft"],
+        ["volvofmx_transfercase_front","volvofmx_transfercase_front", "Front Transfercase"],
+        ["volvofmx_transfercase_rear","volvofmx_transfercase_rear", "Rear Transfercase"],
     ],
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
@@ -33,7 +33,7 @@
 "volvofmx_driveshaft_fr": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Driveshaft to Front and Rear Transfercase",
         "value":900,
     }
     "slotType" : "volvofmx_driveshaft_fr",
@@ -48,7 +48,7 @@
 "volvofmx_transfercase_front": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Front Transfercase",
         "value":900,
     }
     "slotType" : "volvofmx_transfercase_front",
@@ -62,7 +62,7 @@
 "volvofmx_transfercase_rear": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Rear Transfercase",
         "value":900,
     }
     "slotType" : "volvofmx_transfercase_rear",
@@ -115,11 +115,6 @@
         ["shaft", "intershaft_rear", "transfercase_rear", 2, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
-
-//
-
-
-
 
 "volvofmx_differential_F_1": {
     "information":{

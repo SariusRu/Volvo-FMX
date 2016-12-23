@@ -13,9 +13,9 @@
 		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],		
 		//supports
 		["volvofmx_supports","volvofmx_supports", "volvofmx Supports"],
-		["volvofmx_transfercase_main","transfercase_main", "Transfer Case"],
-		["volvofmx_driveshaft","volvofmx_driveshaft", "Driveshaft"],
-		["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshaft"],
+		["volvofmx_transfercase_main","transfercase_main", "Main Transfer Case"],
+		["volvofmx_driveshaft","volvofmx_driveshaft", "Gearbox Driveshaft"],
+		["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshafts between Transfercases"],
 
 	],
 	"nodes": [
