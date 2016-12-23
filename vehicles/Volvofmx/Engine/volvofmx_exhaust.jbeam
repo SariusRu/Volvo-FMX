@@ -1,0 +1,38 @@
+{
+"volvofmx_exhaust": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Exhaust",
+        "value":800,
+    }
+    "slotType" : "volvofmx_exhaust",
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeWeight":2},
+         {"group":"volvofmx_ypipe"},
+         {"selfCollision":true}
+         {"collision":true}
+         ["ex1r", -0.47, -0.99, 0.43],
+         ["ex1l", 0.47, -0.99, 0.43],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2501000,"beamDamp":100},
+          {"beamDeform":45000,"beamStrength":"FLT_MAX"},
+          //ypipe
+          ["ex1r","ex1l"{"isExhaust":true}],
+          ["ex1r","en2r"{"isExhaust":true}],
+          ["ex1l","en2r"],
+          //ypipe to engine
+          ["ex1r","tra1"],
+          ["ex1l","tra1"],
+          ["ex1r","en4l"],
+          ["ex1l","en4r"],
+          ["ex1r","en4r"],
+          ["ex1l","en4l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+}
+}

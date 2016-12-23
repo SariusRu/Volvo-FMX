@@ -1,0 +1,21 @@
+{
+"volvofmx_axle": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Volvo FMX Axles",
+	}	
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_axle_F","volvofmx_axle_F", "volvofmx front Axle"],
+        ["volvofmx_axle_F2","volvofmx_axle_F2", "volvofmx second front Axle"],
+        ["volvofmx_axle_R","volvofmx_axle_R", "volvofmx rear Axle"],
+        ["volvofmx_axle_R2","volvofmx_axle_R2", "volvofmx second rear Axle"],
+	]
+    "slotType" : "volvofmx_axle",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	
+}
+}

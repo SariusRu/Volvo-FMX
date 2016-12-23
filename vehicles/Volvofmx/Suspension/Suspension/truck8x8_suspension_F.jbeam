@@ -1,0 +1,297 @@
+{
+"volvofmx_axle_F": {
+	"information":{
+		"authors":"Jalkku",
+		"name":"volvofmx Front Axle",
+	}
+    "slotType" : "volvofmx_axle_F",
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_steering","volvofmx_steering", "volvofmx Steering"],
+		["volvofmx_shock_F","volvofmx_shock_F", "volvofmx Front Shocks+airbags"],
+		["volvofmx_brake_F","volvofmx_brake_F", "volvofmx Front Brakes"],
+		["volvofmx_wheel_F","volvofmx_wheel_F", "volvofmx Front Wheels"],
+	],
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 ["volvofmx_axle_F", ["volvofmx_axle_F","volvofmx_shockbottom_F"]],
+		 ["volvofmx_arm_F", ["volvofmx_armattach_F","volvofmx_axle_F"]],
+	 ],
+	 
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+		 {"selfCollision":false}
+		 {"collision":false}
+		 //frame
+		 {"nodeWeight":80},
+		 
+		 {"frictionCoef":0.7},
+		 {"nodeMaterial":"|NM_METAL"},
+		 //axle
+		 {"group":"volvofmx_axle_F"}
+		 ["fa1r", -0.9, -3.5, 0.21],
+		 ["fa1l", 0.9, -3.5, 0.21],
+		 
+		 
+		 {"group":"volvofmx_shockbottom_F"}
+		 ["fa2r", -0.9, -2.9, 0.21],
+		 ["fa2l", 0.9, -2.9, 0.21],
+		 {"group":"volvofmx_axle_F"}
+		 ["fa3r", -0.9, -3.5, 0.61],
+		 ["fa3l", 0.9, -3.5, 0.61],
+		 
+		 ["fa4r", -0.9, -2.9, 0.61],
+		 ["fa4l", 0.9, -2.9, 0.61],
+		 
+		 //hubs
+		 {"group":"volvofmx_hub_F"}
+		 ["fh1r", -0.8, -3.33, 0.41],
+		 ["fh1rr", -1.2, -3.33, 0.41],
+		 
+		 ["fh1l", 0.8, -3.33, 0.41],
+		 ["fh1ll", 1.2, -3.33, 0.41],
+		 
+		 ["fh2r", -0.8, -2.9, 0.41],
+		 ["fh2l", 0.8, -2.9, 0.41],
+		 
+		 ["fh3r", -0.8, -3.33, 0.61],
+		 ["fh3l", 0.8, -3.33, 0.61],
+		 {"group":""}
+	],
+	"beams": [
+		  ["id1:", "id2:", "options"],
+		  {"beamSpring":100001000,"beamDamp":4000},
+		  {"beamDeform":5350000,"beamStrength":85000000},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  //shackle
+		  ["fa1r","fa1l"],
+		  ["fa2r","fa2l"],
+		  ["fa3r","fa3l"],
+		  ["fa4r","fa4l"],
+		  
+		  ["fa1r","fa2r"],
+		  ["fa1r","fa3r"],
+		  ["fa1r","fa4r"],
+		  
+		  ["fa2r","fa3r"],
+		  ["fa2r","fa4r"],
+		  
+		  ["fa3r","fa2r"],
+		  ["fa3r","fa4r"],
+		  
+		  ["fa4r","fa2r"],
+		  ["fa4r","fa1r"],
+		  
+		  //
+		  ["fa1l","fa2l"],
+		  ["fa1l","fa3l"],
+		  ["fa1l","fa4l"],
+		  
+		  ["fa2l","fa3l"],
+		  ["fa2l","fa4l"],
+		  
+		  ["fa3l","fa2l"],
+		  ["fa3l","fa4l"],
+		  
+		  ["fa4l","fa2l"],
+		  ["fa4l","fa1l"],
+		  
+		  ["fa1l","fa2r"],
+		  ["fa1l","fa3r"],
+		  ["fa1l","fa4r"],
+		  
+		  ["fa2l","fa1r"],
+		  ["fa2l","fa3r"],
+		  ["fa2l","fa4r"],
+		  
+		  ["fa3l","fa1r"],
+		  ["fa3l","fa2r"],
+		  ["fa3l","fa4r"],
+		  
+		  ["fa4l","fa1r"],
+		  ["fa4l","fa3r"],
+		  ["fa4l","fa2r"],
+		  
+		  //Mount
+		  {"beamSpring":100001000,"beamDamp":4000},
+		  {"beamDeform":5350000,"beamStrength":8500000},
+		  ["fa1l","f12l"],
+		  //["fa2l","f12l"],
+		  //["fa3l","f12l"],
+		  //["fa4l","f12l"],
+          //
+		  ["fa1r","f12r"],
+		  //["fa2r","f12r"],
+		  //["fa3r","f12r"],
+		  //["fa4r","f12r"],
+		  
+		  ["fa1l","f12"],
+		  ["fa2l","f12"],
+		  ["fa3l","f12"],
+		  ["fa4l","f12"],
+          
+		  ["fa1r","f12"],
+		  ["fa2r","f12"],
+		  ["fa3r","f12"],
+		  ["fa4r","f12"],
+		  
+		  //front hub
+		  ["fh2r","fh1r"],
+		  ["fh2r","fh1rr"],
+		  
+		  ["fh3r","fh1r"],
+		  ["fh3r","fh1rr"],
+		  
+		  ["fh2r","fh3r"],
+		  
+		  //L
+		  ["fh2l","fh1l"],
+		  ["fh2l","fh1ll"],
+
+		  ["fh3l","fh1l"],
+		  ["fh3l","fh1ll"],
+
+		  ["fh2l","fh3l"],
+		  {"beamSpring":80001000,"beamDamp":2000},
+		  {"beamDeform":835000,"beamStrength":1050000},
+		  //wheel attach
+		  {"breakGroup":"wheel_FR"},
+		  ["fh1r","fa1r"],
+		  ["fh1r","fa2r"],
+		  ["fh1r","fa3r"],
+		  ["fh1r","fa4r"],
+		  
+		  ["fh3r","fa1r"],
+		  ["fh3r","fa2r"],
+		  ["fh3r","fa3r"],
+		  ["fh3r","fa4r"],
+
+		  ["fh1r","fa1l"],
+		  ["fh1r","fa2l"],
+		  ["fh1r","fa3l"],
+		  ["fh1r","fa4l"],
+		              
+		  ["fh3r","fa1l"],
+		  ["fh3r","fa2l"],
+		  ["fh3r","fa3l"],
+		  ["fh3r","fa4l"],
+		  
+		  //l
+		  {"breakGroup":"wheel_FL"},
+		  ["fh1l","fa1l"],
+		  ["fh1l","fa2l"],
+		  ["fh1l","fa3l"],
+		  ["fh1l","fa4l"],
+
+		  ["fh3l","fa1l"],
+		  ["fh3l","fa2l"],
+		  ["fh3l","fa3l"],
+		  ["fh3l","fa4l"],
+
+		  ["fh1l","fa1r"],
+		  ["fh1l","fa2r"],
+		  ["fh1l","fa3r"],
+		  ["fh1l","fa4r"],
+
+		  ["fh3l","fa1r"],
+		  ["fh3l","fa2r"],
+		  ["fh3l","fa3r"],
+		  ["fh3l","fa4r"],
+		  {"breakGroup":""},
+	],
+	"triangles": [
+			["id1:","id2:","id3:"],
+			{"group":""},	
+			
+			//["fa1r","fa2r","fa2l"],
+			//["fa2l","fa1l","fa1r"],
+			//["fa4r","fa3r","fa3l"],
+			//["fa3l","fa4l","fa4r"],
+			//["fa4r","fa2r","fa2l"],
+			//["fa2l","fa4l","fa4r"],
+			//["fa1r","fa3r","fa3l"],
+			//["fa3l","fa1l","fa1r"],
+	],
+}
+"volvofmx_shock_F": {
+	"information":{
+		"authors":"Jalkku",
+		"name":"volvofmx Front Shocks",
+	}
+    "slotType" : "volvofmx_shock_F",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 ["volvofmx_shock_F", ["volvofmx_shockbottom_F","volvofmx_shocktop_F"]],
+		 ["volvofmx_airbag_F", ["volvofmx_shockbottom_F","volvofmx_shocktop_F"]],
+	 ],
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+	],
+	"beams": [
+		  ["id1:", "id2:", "options"],		  
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  //--FRONT SHOCKS--
+		  {"beamSpring":250000,"beamDamp":60000,"beamDeform":106000000,"beamStrength":154000000},
+		  {"beamLimitSpring":100001000,"beamLimitDamp":4000},
+		  {"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.0, "beamShortBound":0.25},
+		  ["fa2r","f3r"],
+		  ["fa2l","f3l"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+	],
+}
+"volvofmx_brake_F": {
+	"information":{
+		"authors":"Jalkku",
+		"name":"volvofmx Front Brakes",
+	}
+    "slotType" : "volvofmx_brake_F",
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+	 ],
+	"hubWheels": [
+			["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+			{"enableABS":true}
+			{"ABSthreshold":1}
+			{"brakeTorque":20000},
+			{"parkingTorque":0},
+	],
+}
+"volvofmx_steering": {
+	"information":{
+		"authors":"Jalkku",
+		"name":"volvofmx front 1 Steering",
+	}
+    "slotType" : "volvofmx_steering",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 //tie rod
+		 ["volvofmx_tierod", ["volvofmx_hub_a_F","volvofmx_hub_b_F"]],
+	],
+	"hydros": [
+			["id1:","id2:"],
+		    //{"breakGroupType":1},
+			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},
+			//["f4l","sta1r", {"factor":-0.15,"steeringWheelLock":880}],
+			//["f4l","sta1l", {"factor":-0.15,"steeringWheelLock":880}],
+			{"breakGroup":"volvofmx_steering"},
+			["fh2l","fa4r", {"factor":0.14,"steeringWheelLock":880}],
+			["fh2r","fa4l", {"factor":-0.14,"steeringWheelLock":880}],
+
+			{"breakGroup":""},
+			{"beamPrecompression":1},
+	],
+}
+}
+}

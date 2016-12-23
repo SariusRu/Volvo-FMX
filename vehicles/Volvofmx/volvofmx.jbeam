@@ -769,5 +769,9 @@
 			["f20r","f19","f19r"],
 			["f20r","f20","f19"],
 	],
+	"controller": [
+        ["fileName"],
+        ["vehicleController", {}],
+    ],
 }
 }

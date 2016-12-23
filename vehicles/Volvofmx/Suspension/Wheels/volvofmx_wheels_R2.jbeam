@@ -1,0 +1,93 @@
+{
+"volvofmx_wheel_R2": {
+	"information":{
+		"authors":"Jalkku",
+		"name":"volvofmx second Rear Wheels",
+	}
+	"variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
+        ["$tirepressure_R2", "range", "psi", "Tires", 40, 0, 120, "Rear 2 Tire Pressure", "Relative to atmospheric pressure"]
+    ],
+    "slotType" : "volvofmx_wheel_R2",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		 {"selfCollision":false}
+		 {"collision":true}
+		 //frame
+		 {"nodeWeight":12},
+		 {"frictionCoef":0.7},
+		 {"nodeMaterial":"|NM_METAL"},
+
+		 {"group":""}
+		 
+	]
+	"beams": [
+		  ["id1:", "id2:", "options"],
+		  {"beamSpring":19001000,"beamDamp":300},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
+		  ["r2h1r","r2h1rr"],
+		  ["r2h1l","r2h1ll"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+	],
+	"pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+			{"enableTireLbeams":true,"disableMeshBreaking":false,"disableHubMeshBreaking":false},
+
+            //general settings
+			{"radius":0.5715},
+			{"hubRadius":0.30},
+			{"wheelOffset":-0.02},
+			{"hubWidth":0.305},
+			{"tireWidth":0.275},
+			{"numRays":18},
+			
+
+            //hub options
+            {"hubTreadBeamSpring":3001000, "hubTreadBeamDamp":25},
+            {"hubPeripheryBeamSpring":3001000, "hubPeripheryBeamDamp":25},
+            {"hubSideBeamSpring":4001000, "hubSideBeamDamp":25},
+            {"hubBeamDeform":170000, "hubBeamStrength":470000},
+            {"hubNodeWeight":2.0},
+            {"hubNodeMaterial":"|NM_METAL","hasTire":false},
+            {"hubFrictionCoef":0.5},
+            
+            //tire options
+            {"wheelSideBeamSpring":0,"wheelSideBeamDamp":200},
+            {"wheelSideBeamSpringExpansion":1501000,"wheelSideBeamDampExpansion":200},
+            {"wheelReinfBeamSpring":141000,"wheelReinfBeamDamp":120},
+            {"wheelTreadBeamSpring":801000,"wheelTreadBeamDamp":200},
+            {"wheelPeripheryBeamSpring":801000,"wheelPeripheryBeamDamp":100},
+
+            //deform values
+            {"wheelSideBeamDeform":138000,"wheelSideBeamStrength":152000},
+            {"wheelReinfBeamDeform":138000,"wheelReinfBeamStrength":152000},
+            {"wheelTreadBeamDeform":138000,"wheelTreadBeamStrength":176000},
+            {"wheelPeripheryBeamDeform":138000,"wheelPeripheryBeamStrength":176000},
+
+            //general tire values
+            {"nodeWeight":1.52},
+            {"nodeMaterial":"|NM_RUBBER","hasTire":true},
+            {"frictionCoef":1.05},
+            {"triangleCollision":true},
+            {"pressurePSI":"$tirepressure_R"},
+            {"dragCoef":20},
+
+			{"selfCollision":true}
+			{"collision":true}
+            ["R2R", "wheel_R2R","tire_R2R", "r2h1rr", "r2h1r", 9999,  "r2h2r", 1{"speedo" : true}],
+            ["R2L", "wheel_R2L","tire_R2L", "r2h1ll", "r2h1l", 9999,  "r2h2l", -1],
+    ],
+	"powertrain" : [
+        ["type", "name", "inputName", "inputIndex"],
+        //rear left axle
+        ["shaft", "wheelaxle_RL_2", "differential_R_2", 1, {"connectedWheel":"R2L", "breakTriggerBeam":"axle_RL_2", "friction":6}]
+        //rear right axle
+        ["shaft", "wheelaxle_RR_2", "differential_R_2", 2, {"connectedWheel":"R2R", "breakTriggerBeam":"axle_RR_2", "friction":6}]
+    ],
+}
+}
