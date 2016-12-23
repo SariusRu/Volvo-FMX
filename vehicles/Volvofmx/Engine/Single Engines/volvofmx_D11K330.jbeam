@@ -46,7 +46,7 @@
             [2100,786],
             [2200,0],
         ],
-        "idleRPM":500,
+        "idleRPM":800,
         "maxRPM":2500,
         "revLimiterRPMDrop":0,
         "inertia":5,
@@ -269,4 +269,4 @@
 }
 }
 }
-//TRYOUT
+
