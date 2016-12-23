@@ -16,6 +16,10 @@
 		
 
 	],
+	"refNodes":[
+		["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"]
+		["f15", "f16", "f15l", "f5", "f10l", "f10r"]
+		],
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 		 {"selfCollision":false}
