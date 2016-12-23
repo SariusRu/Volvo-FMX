@@ -1,0 +1,2 @@
+Engine -->  Clutch --> Transmssion --> DriveshaftMain --> Middle Differential --> Rear Axle Differential -->2. Rear Axle Differential
+                                                                              --> Front Axle Differential--> 2. Front Axle Differential
