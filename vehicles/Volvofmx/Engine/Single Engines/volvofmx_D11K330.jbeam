@@ -48,7 +48,7 @@
 
             //HP = Torque x RPM ÷ 5252
         ],
-        "idleRPM":500,
+        "idleRPM":800,
         "maxRPM":2500,
         "revLimiterRPMDrop":0,
         "inertia":5,
@@ -271,3 +271,4 @@
 }
 }
 }
+
