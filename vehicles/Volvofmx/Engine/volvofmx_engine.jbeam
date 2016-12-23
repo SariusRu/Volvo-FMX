@@ -16,6 +16,9 @@
             ["volvofmx_tank_l","", "Left Tank"],
             //radiator
             ["volvofmx_radiator","volvofmxradiator", "Radiator"],
+            ["volvofmx_transfercase_main","transfercase_main", "Main Transfer Case"],
+		    ["volvofmx_driveshaft","volvofmx_driveshaft", "Gearbox Driveshaft"],
+		    ["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshafts between Transfercases"],
         ],        
         "powertrain" : [
             ["type", "name", "inputName", "inputIndex"],

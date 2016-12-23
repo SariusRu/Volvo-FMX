@@ -8,14 +8,12 @@
 	"slots": [
 		["type", "default", "description"]
 		//engine
-		["volvofmx_engine","volvofmx_engine_D11K330", "Volvo Engine"],
+		["volvofmx_engine","volvofmx_engine_D11K330", "Volvo Engine and Transmission"],
 		//suspension
 		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],		
 		//supports
 		["volvofmx_supports","volvofmx_supports", "volvofmx Supports"],
-		["volvofmx_transfercase_main","transfercase_main", "Main Transfer Case"],
-		["volvofmx_driveshaft","volvofmx_driveshaft", "Gearbox Driveshaft"],
-		["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshafts between Transfercases"],
+		
 
 	],
 	"nodes": [
