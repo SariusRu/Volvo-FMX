@@ -29,11 +29,11 @@
          {"group":"volvofmx_radiator"},
          {"engineGroup":"volvofmx_radiator"},
          {"nodeWeight":10.71},
-         ["ral0",0.4,-4.75,0.7],
+         ["ral0",0.4,-4.75,0.9],
          ["ral1",0.4,-4.75,1.45],
-         ["ra2",0.0,-4.75,0.7],
+         ["ra2",0.0,-4.75,0.9],
          ["ra3",0.0,-4.75,1.45],
-         ["rar4",-0.4,-4.75,0.7],
+         ["rar4",-0.4,-4.75,0.9],
          ["rar5",-0.4,-4.75,1.45],
          {"group":""},
          
@@ -99,7 +99,10 @@
             {"group":"volvofmx_radiator"},
             {"groundModel":"metal"},
             {"dragCoef":4},
-            
+            ["ra2","rar5","rar4"],
+            ["ra2","ra3","rar5"],
+            ["ral0","ra3","ra2"],
+            ["ral0","ral1","ra3"],
             {"group":""},
     ],
 }
