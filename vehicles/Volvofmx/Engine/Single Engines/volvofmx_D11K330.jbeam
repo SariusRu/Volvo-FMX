@@ -9,14 +9,14 @@
         "slots":    [
             ["type", "default", "description"]
             //engine
-            ["volvofmx_transmission","volvofmx_AT2412E", "Transmission"],
+            ["volvofmx_transmission","volvofmx_transmission_AT2412F", "Transmission"],
             ["volvofmx_exhaust","volvofmx_exhaust", "Exhaust"],
             //tank
-            ["volvofmx_tank_r","", "Right Tank"],
-            ["volvofmx_tank_l","", "Left Tank"],
+            ["volvofmx_tank_r","volvofmx_fueltank_R", "Right Tank"],
+            ["volvofmx_tank_l","volvofmx_fueltank_L", "Left Tank"],
             //radiator
-            ["volvofmx_radiator","volvofmxradiator", "Radiator"],
-            ["volvofmx_transfercase_main","transfercase_main", "Main Transfer Case"],
+            ["volvofmx_radiator","volvofmx_radiator", "Radiator"],
+            ["volvofmx_transfercase_main","volvofmx_transfercase", "Main Transfer Case"],
 		    ["volvofmx_driveshaft","volvofmx_driveshaft", "Gearbox Driveshaft"],
 		    ["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshafts between Transfercases"],
         ],        
@@ -59,12 +59,7 @@
         "particulates":0.3
         "energyStorage": "mainTank",
         "requiredEnergyType":"gasoline",
-
-        //cooling and oil system
-        "thermalsEnabled":true
-        "engineBlockMaterial":"iron"
-        "oilVolume":25
-
+       
         //engine durability
         "cylinderWallTemperatureDamageThreshold":160
         "headGasketDamageThreshold":1500000
