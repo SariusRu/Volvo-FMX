@@ -130,13 +130,6 @@
 	],
 	"beams": [
 		  ["id1:", "id2:", "options"],
-		  {"optional":true},
-		  {"beamSpring":15000000,"beamDamp":500},
-		  {"beamDeform":70000"beamStrength":90000},
-		  {"name":"driveshaft1"},
-		  ["f6","tra1"],
-		  {"name":""},
-		  //engine mount
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamSpring":150000000,"beamDamp":1000},
 		  {"beamDeform":360000,"beamStrength":3500000},
@@ -181,15 +174,6 @@
 		  ["en2r","f14"],
 		  ["en2l","f14"],
 		  ["en2l","f14l"],
-		  
-		  //transmission
-		  ["tra1","f15"],
-		  ["tra1","f15r"],
-		  ["tra1","f15l"],
-		  
-		  ["tra1","fsd1"],
-		  ["tra1","fsd1r"],
-		  ["tra1","fsd1l"],
 		  
 		  {"optional":false},
 
