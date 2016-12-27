@@ -95,24 +95,15 @@
          {"nodeMaterial":"|NM_METAL"},
          {"group":"volvofmx_engine"},
          {"engineGroup":"volvofmx_engine_block"}
-         ["en1r", -0.24, -4.24, 0.45,{"isExhaust":true,"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         ["en1l", 0.24, -4.24, 0.45],
-         {"engineGroup":["volvofmx_engine_block","volvofmx_exhaust_manifold"]},
+         ["en1r", -0.24, -4.24, 0.55,{"isExhaust":true,"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en1l", 0.24, -4.24, 0.55],
          ["en2r", -0.24, -3, 0.6,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         {"engineGroup":"volvofmx_engine_block"},
          ["en2l", 0.24, -3, 0.6],
          ["en3r", -0.24, -4.24, 1.32,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
          ["en3l", 0.24, -4.24, 1.32],
          ["en4r", -0.24, -3, 1.32,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
          ["en4l", 0.24, -3, 1.32],
          ["enf", -0.0, -4.26, 1.33],         
-         {"selfCollision":true}
-         {"collision":true}
-         {"engineGroup":"volvofmx_engine_intake"}
-         {"group":"volvofmx_radtube_R"},
-         ["en5l", 0.3, -3.62, 1.30,{"chemEnergy":200,"burnRate":0.3,"flashPoint":200,"specHeat":0.1,"smokePoint":150,"selfIgnitionCoef":false}],
-         ["en5r", -0.3, -3.62, 1.3,{"chemEnergy":200,"burnRate":0.3,"flashPoint":200,"specHeat":0.1,"smokePoint":150,"selfIgnitionCoef":false}],         
-         {"engineGroup":""}
          {"selfCollision":true}
          {"collision":true}
          {"group":""},
