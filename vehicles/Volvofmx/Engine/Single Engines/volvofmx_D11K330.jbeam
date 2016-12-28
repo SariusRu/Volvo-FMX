@@ -9,14 +9,14 @@
         "slots":    [
             ["type", "default", "description"]
             //engine
-            ["volvofmx_transmission","volvofmx_AT2412E", "Transmission"],
+            ["volvofmx_transmission","volvofmx_transmission_AT2412F", "Transmission"],
             ["volvofmx_exhaust","volvofmx_exhaust", "Exhaust"],
             //tank
-            ["volvofmx_tank_r","", "Right Tank"],
-            ["volvofmx_tank_l","", "Left Tank"],
+            ["volvofmx_tank_r","volvofmx_fueltank_R", "Right Tank"],
+            ["volvofmx_tank_l","volvofmx_fueltank_L", "Left Tank"],
             //radiator
-            ["volvofmx_radiator","volvofmxradiator", "Radiator"],
-            ["volvofmx_transfercase_main","transfercase_main", "Main Transfer Case"],
+            ["volvofmx_radiator","volvofmx_radiator", "Radiator"],
+            ["volvofmx_transfercase_main","volvofmx_transfercase", "Main Transfer Case"],
 		    ["volvofmx_driveshaft","volvofmx_driveshaft", "Gearbox Driveshaft"],
 		    ["volvofmx_driveshaft_fr","volvofmx_driveshaft_fr", "Driveshafts between Transfercases"],
         ],        
@@ -28,23 +28,25 @@
         "torque":[
             ["rpm", "torque"]
             [0, 0],
-            [600,1048],
-            [700,1164],
-            [800,1339],
-            [900,1542],
-            [1000,1600],
-            [1100,1600],
-            [1200,1600],
-            [1300,1600],
-            [1400,1571],
-            [1500,1542],
-            [1600,1513],
-            [1700,1426],
-            [1800,1339],
-            [1900,1222],
-            [2000,1048],
-            [2100,786],
+            [600,1230],
+            [700,1350],
+            [800,1508],
+            [900,1610],
+            [1000,1730],
+            [1100,1730],
+            [1200,1730],
+            [1300,1730],
+            [1400,1681],
+            [1500,1600],
+            [1600,1598],
+            [1700,1511],
+            [1800,1435],
+            [1900,1366],
+            [2000,1162],
+            [2100,925],
             [2200,0],
+
+            //HP = Torque x RPM ÷ 5252
         ],
         "idleRPM":800,
         "maxRPM":2500,
@@ -61,7 +63,7 @@
         //cooling and oil system
         "thermalsEnabled":true
         "engineBlockMaterial":"iron"
-        "oilVolume":25
+        "oilVolume":36
 
         //engine durability
         "cylinderWallTemperatureDamageThreshold":160
@@ -93,30 +95,15 @@
          {"nodeMaterial":"|NM_METAL"},
          {"group":"volvofmx_engine"},
          {"engineGroup":"volvofmx_engine_block"}
-         ["en1r", -0.24, -3.73, 0.65,{"isExhaust":true,"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         ["en1l", 0.24, -3.73, 0.65],
-         {"engineGroup":["volvofmx_engine_block","volvofmx_exhaust_manifold"]},
-         ["en2r", -0.24, -2.52, 0.48,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         {"engineGroup":"volvofmx_engine_block"},
-         ["en2l", 0.24, -2.52, 0.48],
-         ["en3r", -0.24, -3.73, 1.52,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         ["en3l", 0.24, -3.73, 1.52],
-         ["en4r", -0.24, -2.52, 1.52,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
-         ["en4l", 0.24, -2.52, 1.52],
-         ["enf", -0.0, -3.8, 1.33],
-         {"engineGroup":""},
-         {"group":"volvofmx_airfilter_ypipe"},
-         {"nodeWeight":5.1},
-         ["afyp", -0.15500, -2.75000, 1.70000],
-         {"selfCollision":true}
-         {"collision":true}
-         {"engineGroup":"volvofmx_engine_intake"}
-         {"group":"volvofmx_radtube_R"},
-         ["en5r", -0.45, -3.24, 1.4,{"chemEnergy":200,"burnRate":0.3,"flashPoint":200,"specHeat":0.1,"smokePoint":150,"selfIgnitionCoef":false}],
-         {"group":"volvofmx_radtube_L"},
-         {"engineGroup":"volvofmx_engine_block"}
-         ["en5l", 0.3, -3.4, 1.30],
-         {"engineGroup":""}
+         ["en1r", -0.24, -4.24, 0.55,{"isExhaust":true,"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en1l", 0.24, -4.24, 0.55],
+         ["en2r", -0.24, -3, 0.6,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en2l", 0.24, -3, 0.6],
+         ["en3r", -0.24, -4.24, 1.32,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en3l", 0.24, -4.24, 1.32],
+         ["en4r", -0.24, -3, 1.32,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en4l", 0.24, -3, 1.32],
+         ["enf", -0.0, -4.26, 1.33],         
          {"selfCollision":true}
          {"collision":true}
          {"group":""},
@@ -162,14 +149,7 @@
           ["enf","en3r"],
           ["enf","en1l"],
           ["enf","en1r"],
-          {"beamDeform":25000,"beamStrength":"FLT_MAX"}
-          {"beamSpring":320800,"beamDamp":400},
-          //air filter piping attach
-          {"optional":true},
-          ["afyp","dc1rr"],
-          ["afyp","dc1ll"],
-          ["afyp","dc3rr"],
-          ["afyp","dc3ll"],
+          ["en5r","en5l"],
           {"beamDeform":10000,"beamStrength":20000}
           {"beamSpring":200800,"beamDamp":400},
           {"breakGroup":"engine_intake"},
@@ -229,8 +209,8 @@
           ["en2l","f13l"],
           ["en2r","f4r"],
           ["en2l","f4l"],
-          ["en2r","f14r",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
-          ["en2l","f14l",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
+          ["en2r","f13r",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
+          ["en2l","f13l",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
           //support beams for anti clipping
           {"beamType":"|SUPPORT", "beamLongBound":5},
           {"beamSpring":8000800,"beamDamp":800},
