@@ -20,4 +20,25 @@
          ["volvofmx_fueltank_R", ["volvofmx_fueltank_R"]],
      ],
 }
+"volvofmx_fueltank_L": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Left Fuel Tank",
+        "value":600,
+    }
+    "slotType" : "volvofmx_tank_l",
+    "energyStorage": [
+        ["type", "name"],
+        ["fuelTank", "mainTank"],
+    ],
+    "mainTank": {
+        "energyType":"gasoline",
+        "fuelCapacity": 450,
+        "fuel": {"[engineGroup]:":["fuel"]},
+    }
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["volvofmx_fueltank_R", ["volvofmx_fueltank_R"]],
+     ],
+}
 }

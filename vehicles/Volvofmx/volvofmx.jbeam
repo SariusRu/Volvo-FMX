@@ -18,7 +18,7 @@
 	],
 	"refNodes":[
 		["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"]
-		["f15", "f16", "f15l", "f5", "f10l", "f10r"]
+		["f15", "f16", "f15l", "f5", "f11l", "f11r"]
 		],
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
@@ -76,7 +76,7 @@
 		 ["f9", 0.0, 3.59, 1.05],
 		 
 		 ["f10r", -0.434, 4.10,1.051],
-		 ["f10", 0.0, 4.10, 1.05],
+		 ["f10", 0.0, 4.10, 1.05{"couplerTag":"fifthwheel","couplerStrength":1001000,"couplerRadius":1}],
 		 ["f10l", 0.434, 4.10, 1.05],
 		 
 		 {"nodeWeight":150},
@@ -94,9 +94,9 @@
 		 ["f13l", 0.4, -3.24, 0.65],
 		 {"group":"volvofmx_armattach_F2"},
 		 {"nodeWeight":150},
-		 ["f14r", -0.5, -2.1, 0.4],
-		 ["f14", 0.0, -2.1, 0.4],
-		 ["f14l", 0.5, -2.1, 0.4],
+		 ["f14r", -0.5, -2.2, 0.4],
+		 ["f14", 0.0, -2.2, 0.4],
+		 ["f14l", 0.5, -2.2, 0.4],
 		 {"group":"volvofmx_frame"},
 		 ["f15r", -0.434, -1.17, 0.5],
 		 ["f15", 0.0, -1.17, 0.5],
@@ -113,7 +113,7 @@
 		 {"group":"volvofmx_armattach_R2"},
 		 ["f18r", -0.5, 2.41, 0.4],
 		 
-		 ["f18l", 0., 2.41, 0.4],
+		 ["f18l", 0.5, 2.41, 0.4],
 		 {"group":"volvofmx_frame"},
 		 ["f17", 0.0, 1.15, 0.4],
 		 ["f18", 0.0, 2.51, 0.4],
@@ -130,13 +130,6 @@
 	],
 	"beams": [
 		  ["id1:", "id2:", "options"],
-		  {"optional":true},
-		  {"beamSpring":15000000,"beamDamp":500},
-		  {"beamDeform":70000"beamStrength":90000},
-		  {"name":"driveshaft1"},
-		  ["f6","tra1"],
-		  {"name":""},
-		  //engine mount
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamSpring":150000000,"beamDamp":1000},
 		  {"beamDeform":360000,"beamStrength":3500000},
@@ -181,15 +174,6 @@
 		  ["en2r","f14"],
 		  ["en2l","f14"],
 		  ["en2l","f14l"],
-		  
-		  //transmission
-		  ["tra1","f15"],
-		  ["tra1","f15r"],
-		  ["tra1","f15l"],
-		  
-		  ["tra1","fsd1"],
-		  ["tra1","fsd1r"],
-		  ["tra1","fsd1l"],
 		  
 		  {"optional":false},
 

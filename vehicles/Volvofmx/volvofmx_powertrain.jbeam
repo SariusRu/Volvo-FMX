@@ -10,7 +10,20 @@
         ["type", "name", "inputName", "inputIndex"]
         //driveshaft
         ["shaft", "driveshaft", "gearbox", 1, {"breakTriggerBeam":"driveshaft", "electricsName":"driveshaft", "friction":2}]
-    ],
+    ],    
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.01, "beamShortBound":0.01},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3000,"beamStrength":8000},
+          {"beamLimitSpring":10001000,"beamLimitDamp":1000},
+          {"breakGroup":"driveshaft"},
+          {"deformGroup":"driveshaft"},
+          ["shaft1","shaft_con0", {"name":"driveshaft","optional":true}],
+          {"breakGroup":""},
+          {"deformGroup":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        ],
 }
 "volvofmx_transfercase": {
     "information":{
@@ -24,10 +37,127 @@
         ["volvofmx_transfercase_front","volvofmx_transfercase_front", "Front Transfercase"],
         ["volvofmx_transfercase_rear","volvofmx_transfercase_rear", "Rear Transfercase"],
     ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":true}
+         {"collision":true}
+         //--TRANSMISSION CONE--
+         {"nodeWeight":2},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"group":"volvofmx_transfercase_main"},
+            ["tcm_nl0",0.1,-0.1,0.65],
+            ["tcm_nl1",0.1,-0.1,0.85],
+            ["tcm_nl2",0.1,-0.1,1.05],
+            ["shaft_con1",0.0,-0.1,0.75],
+            ["shaft_con0",0.0,-0.1,0.95],
+            ["tcm_nr5",-0.1,-0.1,0.65],
+            ["tcm_nr6",-0.1,-0.1,0.85],
+            ["tcm_nr7",-0.1,-0.1,1.05],
+            ["tcm_nl8",0.1,0.1,0.65],
+            ["tcm_nl9",0.1,0.1,0.85],
+            ["tcm_nl10",0.1,0.1,1.05],
+            ["shaft_con2",0.0,0.1,0.75],
+            ["tcm_nr12",-0.1,0.1,0.65],
+            ["tcm_nr13",-0.1,0.1,0.85],
+            ["tcm_nr14",-0.1,0.1,1.05],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--TRANSMISSION CONE--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":1251000,"beamDamp":250},
+          {"beamDeform":16000,"beamStrength":24000},
+            {"breakGroup":"volvofmx_transfercase_main"},
+            {"deformGroup":"volvofmx_transfercase_main"},
+                ["tcm_nl8","tcm_nl0"],
+                ["tcm_nl8","tcm_nr12"],
+                ["tcm_nl9","tcm_nl10"],
+                ["tcm_nl0","tcm_nr5"],
+                ["tcm_nl1","tcm_nl2"],
+                ["tcm_nr5","tcm_nr12"],
+                ["tcm_nr6","tcm_nr7"],
+                ["tcm_nr13","tcm_nr14"],
+                ["tcm_nl10","tcm_nl2"],
+                ["tcm_nl10","tcm_nr14"],
+                ["tcm_nl2","tcm_nr7"],
+                ["tcm_nr7","tcm_nr14"],
+                ["tcm_nl0","tcm_nl1"],
+                ["tcm_nr5","tcm_nr6"],
+                ["tcm_nl8","tcm_nl9"],
+                ["tcm_nr12","tcm_nr13"],
+                ["tcm_nr6","tcm_nr13"],
+                ["tcm_nl1","tcm_nr6"],
+                ["tcm_nl1","tcm_nl9"],
+                ["tcm_nl9","tcm_nr13"],
+                ["shaft_con1","tcm_nl1"],
+                ["tcm_nr7","shaft_con1"],
+                ["tcm_nl2","shaft_con1"],
+                ["tcm_nr6","shaft_con1"],
+                ["tcm_nr14","tcm_nl9"],
+                ["tcm_nl10","tcm_nr13"],
+                ["shaft_con2","tcm_nl9"],
+                ["tcm_nr12","shaft_con2"],
+                ["tcm_nr13","shaft_con2"],
+                ["tcm_nl8","shaft_con2"],
+                ["shaft_con0","tcm_nr6"],
+                ["tcm_nl0","shaft_con0"],
+                ["tcm_nl1","shaft_con0"],
+                ["tcm_nr5","shaft_con0"],
+                ["tcm_nl10","tcm_nl1"],
+                ["tcm_nl2","tcm_nl9"],
+                ["tcm_nr14","tcm_nr6"],
+                ["tcm_nr7","tcm_nr13"],
+                ["tcm_nr12","tcm_nr6"],
+                ["tcm_nr5","tcm_nr13"],
+                ["tcm_nr12","tcm_nl9"],
+                ["tcm_nl8","tcm_nl1"],
+                ["tcm_nl0","tcm_nl9"],
+                ["tcm_nl8","tcm_nr5"],
+                ["tcm_nl0","tcm_nr12"],
+                ["tcm_nl2","tcm_nr14"],
+                ["tcm_nl10","tcm_nr7"],
+                ["tcm_nr14","shaft_con1"],
+                ["tcm_nr13","shaft_con1"],
+                ["tcm_nl9","shaft_con1"],
+                ["tcm_nl10","shaft_con1"],
+                ["tcm_nr13","shaft_con0"],
+                ["tcm_nl9","shaft_con0"],
+                ["tcm_nr12","shaft_con0"],
+                ["tcm_nl8","shaft_con0"],
+                ["tcm_nr6","shaft_con2"],
+                ["tcm_nl1","shaft_con2"],
+                ["tcm_nr5","shaft_con2"],
+                ["tcm_nl0","shaft_con2"],
+                {"breakGroup":"transfercase_main_mount"},
+                {"deformGroup":"transfercase_main_mount"}
+                //up
+                ["tcm_nl2","f6l"],
+                ["tcm_nl10","f6l"],
+                ["tcm_nr14","f6r"],
+                ["tcm_nr7","f6r"],
+                ["tcm_nl2","f5l"],
+                ["tcm_nl10","f7l"],
+                ["tcm_nr14","f7r"],
+                ["tcm_nr7","f5r"],
+                //down
+                ["tcm_nl0","f16l"],
+                ["tcm_nl8","f16l"],
+                ["tcm_nr12","f16r"],
+                ["tcm_nr5","f16r"],
+                ["tcm_nl0","f15l"],
+                ["tcm_nl8","f17l"],
+                ["tcm_nr12","f17r"],
+                ["tcm_nr5","f15r"],
+                {"breakGroup":""},
+                {"deformGroup":""}
+
+    ],
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "transfercase_main", "driveshaft", 1, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "transfercase_main", "driveshaft", 1, {"breakTriggerBeam":"transfercase_main","diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_driveshaft_fr": {
@@ -41,9 +171,22 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["shaft", "driveshaft_f", "transfercase_main", 1]
-        ["shaft", "driveshaft_r", "transfercase_main", 2]
+        ["shaft", "driveshaft_f", "transfercase_main", 1,{"breakTriggerBeam":"driveshaft_f", "electricsName":"driveshaft_f", "friction":2}]
+        ["shaft", "driveshaft_r", "transfercase_main", 2,{"breakTriggerBeam":"driveshaft_r", "electricsName":"driveshaft_r", "friction":2}]
     ],
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.01, "beamShortBound":0.01},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3000,"beamStrength":8000},
+          {"beamLimitSpring":10001000,"beamLimitDamp":1000},
+          {"breakGroup":"driveshaft_r"},
+          {"deformGroup":"driveshaft_r"},
+          ["shaft1","tcm_n7_connect", {"name":"driveshaft_r","optional":true}],
+          {"breakGroup":""},
+          {"deformGroup":""}
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+        ],
 }
 "volvofmx_transfercase_front": {
     "information":{
