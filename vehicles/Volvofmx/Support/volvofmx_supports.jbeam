@@ -1,0 +1,16 @@
+{
+"volvofmx_supports": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Volvo FMX Supports",
+	}	
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_support_front_right","volvofmx_supports_fr", "Volvo FMX Support Front Right"],
+		["volvofmx_support_front_left","volvofmx_supports_fl", "Volvo FMX Support Front Left"],
+		["volvofmx_support_rear_right","volvofmx_supports_rr", "Volvo FMX Support Rear Right"],
+		["volvofmx_support_rear_left","volvofmx_supports_rl", "Volvo FMX Support Rear Left"],
+	]
+    "slotType" : "volvofmx_supports",		
+	}
+}
