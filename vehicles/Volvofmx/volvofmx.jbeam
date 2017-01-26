@@ -13,6 +13,9 @@
 		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],		
 		//supports
 		["volvofmx_supports","volvofmx_supports", "volvofmx Supports"],
+		//Upfit
+		["volvofmx_upfit_back","volvofmx_fifthwheel","The rear part of the Upfit"],
+
 		
 
 	],
@@ -76,7 +79,7 @@
 		 ["f9", 0.0, 3.59, 1.05],
 		 
 		 ["f10r", -0.434, 4.10,1.051],
-		 ["f10", 0.0, 4.10, 1.05{"couplerTag":"fifthwheel","couplerStrength":1001000,"couplerRadius":1}],
+		 ["f10", 0.0, 4.10, 1.05],
 		 ["f10l", 0.434, 4.10, 1.05],
 		 
 		 {"nodeWeight":150},
