@@ -12,231 +12,130 @@
 		["volvofmx_wheel_R2","volvofmx_wheel_R2", "volvofmx Rear 2 Wheels"],
 		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Long Driveshaft"],
         ["volvofmx_differential_R_2","volvofmx_differential_R_2", "Rear Rear Differential"],
-        ["volvofmx_wheel_R_2","volvofmx_wheel_R_2", "Rear Rear Wheels"],
-        ["volvofmx_wheeldata_R_2","volvofmx_wheeldata_R_2", "Rear Rear Spindles"{"coreSlot":true}],
 	],
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
 	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_axle_R2", ["volvofmx_axle_R2","volvofmx_shockbottom_R2"]],
-		 ["volvofmx_arm_R2", ["volvofmx_armattach_R2","volvofmx_axle_R2"]],
-	 ],
 	 
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 		 {"selfCollision":false}
-		 {"collision":false}
+		 {"collision":true}
 		 //frame
 		 {"nodeWeight":80},
-		 {"group":"volvofmx_axle_R2"}
+		 {"group":"volvofmx_axle_R"}
 		 {"frictionCoef":0.7},
 		 {"nodeMaterial":"|NM_METAL"},
-		 {"group":"volvofmx_shockbottom_R2"}
-		 ["r2a1r", -0.8, 3.4, 0.21],
-		 ["r2a1l", 0.8, 3.4, 0.21],
-		 {"group":"volvofmx_axle_R2"}
-		 ["r2a2r", -0.8, 2.9, 0.21],
-		 ["r2a2l", 0.8, 2.9, 0.21],
-		    
-		 ["r2a3r", -0.8, 3.4, 0.61],
-		 ["r2a3l", 0.8, 3.4, 0.61],
-		    
-		 ["r2a4r", -0.8, 2.9, 0.61],
-		 ["r2a4l", 0.8, 2.9, 0.61],
-		    
-		 //hubs
-		 ["r2h1r", -0.8, 3.14, 0.41],
-		 ["r2h1rr", -1.2, 3.14, 0.41],
-		    
-		 ["r2h1l", 0.8, 3.14, 0.41],
-		 ["r2h1ll", 1.2, 3.14, 0.41],
-		    
-		 ["r2h2r", -0.8, 3.4, 0.41],
-		 ["r2h2l", 0.8, 3.4, 0.41],
-		    
-		 ["r2h3r", -0.8, 3.14, 0.61],
-		 ["r2h3l", 0.8, 3.14, 0.61],
-		 {"group":""}
+		 {"group":"volvofmx_shockbottom_RR"}
+		 ["RRA_shock1r",-0.8,3.75,0.41],
+		 ["RRA_shock2r",-0.8,3.15,0.41],
+		 {"group":"volvofmx_shockbottom_RL"}
+		 ["RRA_shock1l",0.8,3.75,0.41],
+		 ["RRA_shock2l",0.8,3.15,0.41],
+		 {"group":"volvofmx_axle_R"}
+			["RRA_n2",0.0,3.15,0.41],
+			["RRA_n4",0.0,3.469,0.21],
+			["RRA_nl6",0.8,3.5,0.61],
+			["RRA_nr10",-0.8,3.5,0.61],
+			["RRA_n14",0.0,3.75,0.41],
+			["RRA_n15",-0.8,3.5,0.21],
+		 	["RRA_n16",0.8,3.5,0.21],
+			{"group":"volvofmx_R_wheelattach"}
+			["rh2ll",1.2,3.5,0.41],
+			["rh2rr",-1.2,3.5,0.41],
+			["rh2l",0.8,3.5,0.41],
+			["rh2r",-0.8,3.5,0.41],
+			{"group":""}
 	],
 	"beams": [
 		  ["id1:", "id2:", "options"],
 		  {"beamSpring":100001000,"beamDamp":4000},
 		  {"beamDeform":5350000,"beamStrength":8500000},
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
-		  //shackle
-		  ["r2a1r","r2a1l"],
-		  ["r2a2r","r2a2l"],
-		  ["r2a3r","r2a3l"],
-		  ["r2a4r","r2a4l"],
-		  
-		  ["r2a1r","r2a2r"],
-		  ["r2a1r","r2a3r"],
-		  ["r2a1r","r2a4r"],
-		             
-		  ["r2a2r","r2a3r"],
-		  ["r2a2r","r2a4r"],
-		             
-		  ["r2a3r","r2a2r"],
-		  ["r2a3r","r2a4r"],
-		             
-		  ["r2a4r","r2a2r"],
-		  ["r2a4r","r2a1r"],
-		             
-		  //         
-		  ["r2a1l","r2a2l"],
-		  ["r2a1l","r2a3l"],
-		  ["r2a1l","r2a4l"],
-		             
-		  ["r2a2l","r2a3l"],
-		  ["r2a2l","r2a4l"],
-		             
-		  ["r2a3l","r2a2l"],
-		  ["r2a3l","r2a4l"],
-		             
-		  ["r2a4l","r2a2l"],
-		  ["r2a4l","r2a1l"],
-		             
-		  ["r2a1l","r2a2r"],
-		  ["r2a1l","r2a3r"],
-		  ["r2a1l","r2a4r"],
-		             
-		  ["r2a2l","r2a1r"],
-		  ["r2a2l","r2a3r"],
-		  ["r2a2l","r2a4r"],
-		             
-		  ["r2a3l","r2a1r"],
-		  ["r2a3l","r2a2r"],
-		  ["r2a3l","r2a4r"],
-		             
-		  ["r2a4l","r2a1r"],
-		  ["r2a4l","r2a3r"],
-		  ["r2a4l","r2a2r"],
-		     
-		  //Mount
-		  {"beamSpring":100001000,"beamDamp":4000},
-		  {"beamDeform":5305000,"beamStrength":8500000},
-		  ["r2a1l","f18l"],
-		  //["r2a2l","f18l"],
-		  //["r2a3l","f18l"],
-		  //["r2a4l","f18l"],
-          //            
-		  ["r2a1r","f18r"],
-		  //["r2a2r","f18r"],
-		  //["r2a3r","f18r"],
-		  //["r2a4r","f18r"],
-		              
-		  ["r2a1l","f18"],
-		  ["r2a2l","f18"],
-		  ["r2a3l","f18"],
-		  ["r2a4l","f18"],
-                      
-		  ["r2a1r","f18"],
-		  ["r2a2r","f18"],
-		  ["r2a3r","f18"],
-		  ["r2a4r","f18"],
-		     
-		  //r2ront hub
-		  ["r2h2r","r2h1r"],
-		  ["r2h2r","r2h1rr"],
-		             
-		  ["r2h3r","r2h1r"],
-		  ["r2h3r","r2h1rr"],
-		             
-		  ["r2h2r","r2h3r"],
-		             
-		  //L        
-		  ["r2h2l","r2h1l"],
-		  ["r2h2l","r2h1ll"],
-                     
-		  ["r2h3l","r2h1l"],
-		  ["r2h3l","r2h1ll"],
-                     
-		  ["r2h2l","r2h3l"],
-		  {"beamSpring":50001000,"beamDamp":2000},
-		  {"beamDeform":835000,"beamStrength":1050000},
-		  //w2heel attach
-		  {"breakGroup":"wheel_RR2"},
-		  ["r2h1r","r2a1r"],
-		  ["r2h1r","r2a2r"],
-		  ["r2h1r","r2a3r"],
-		  ["r2h1r","r2a4r"],
-		             
-		  ["r2h2r","r2a1r"],
-		  ["r2h2r","r2a2r"],
-		  ["r2h2r","r2a3r"],
-		  ["r2h2r","r2a4r"],
-		             
-		  ["r2h3r","r2a1r"],
-		  ["r2h3r","r2a2r"],
-		  ["r2h3r","r2a3r"],
-		  ["r2h3r","r2a4r"],
-                     
-		  ["r2h1r","r2a1l"],
-		  ["r2h1r","r2a2l"],
-		  ["r2h1r","r2a3l"],
-		  ["r2h1r","r2a4l"],
-		             
-		  ["r2h2r","r2a1l"],
-		  ["r2h2r","r2a2l"],
-		  ["r2h2r","r2a3l"],
-		  ["r2h2r","r2a4l"],
-		             
-		  ["r2h3r","r2a1l"],
-		  ["r2h3r","r2a2l"],
-		  ["r2h3r","r2a3l"],
-		  ["r2h3r","r2a4l"],
-		            
-		  //l2       
-		  {"breakGroup":"wheel_RL2"},
-		  ["r2h1l","r2a1l"],
-		  ["r2h1l","r2a2l"],
-		  ["r2h1l","r2a3l"],
-		  ["r2h1l","r2a4l"],
-		             
-		  ["r2h2l","r2a1l"],
-		  ["r2h2l","r2a2l"],
-		  ["r2h2l","r2a3l"],
-		  ["r2h2l","r2a4l"],
-                     
-		  ["r2h3l","r2a1l"],
-		  ["r2h3l","r2a2l"],
-		  ["r2h3l","r2a3l"],
-		  ["r2h3l","r2a4l"],
-                     
-		  ["r2h1l","r2a1r"],
-		  ["r2h1l","r2a2r"],
-		  ["r2h1l","r2a3r"],
-		  ["r2h1l","r2a4r"],
-                     
-		  ["r2h2l","r2a1r"],
-		  ["r2h2l","r2a2r"],
-		  ["r2h2l","r2a3r"],
-		  ["r2h2l","r2a4r"],
-		             
-		  ["r2h3l","r2a1r"],
-		  ["r2h3l","r2a2r"],
-		  ["r2h3l","r2a3r"],
-		  ["r2h3l","r2a4r"],
-		  {"breakGroup":""},
+		  ["RRA_shock1l","RRA_n16"],
+			["RRA_n14","RRA_shock1r"],
+			["RRA_shock1l","RRA_nl6"],
+			["RRA_n4","RRA_n15"],
+			["RRA_n16","RRA_shock2l"],
+			["RRA_n15","RRA_shock1r"],
+			["RRA_n15","RRA_shock2r"],
+			["RRA_shock1r","RRA_nr10"],
+			["RRA_nl6","RRA_shock2l"],
+			["RRA_n2","RRA_shock2r"],
+			["RRA_shock2r","RRA_nr10"],
+			["RRA_shock2l","RRA_n2"],
+			["RRA_nr10","f18"],
+			["RRA_shock2l","f18"],
+			["RRA_n2","f18"],
+			["RRA_shock2r","f18"],
+			["RRA_nl6","f18"],
+			["RRA_nr10","RRA_n2"],
+			["RRA_nl6","RRA_n2"],
+			["RRA_shock1l","RRA_n14"],
+			["RRA_nl6","RRA_n14"],
+			["RRA_nr10","RRA_n14"],
+			["RRA_n16","RRA_n4"],
+			["RRA_n14","RRA_n4"],
+			["RRA_shock1r","RRA_n2"],
+			["RRA_n15","RRA_n14"],
+			["RRA_n16","RRA_n14"],
+			["RRA_shock1l","RRA_n4"],
+			["RRA_n2","RRA_n4"],
+			["RRA_shock2l","RRA_n4"],
+			["RRA_n16","RRA_n2"],
+			["RRA_shock2r","RRA_n4"],
+			["RRA_n15","RRA_n2"],
+			["RRA_nl6","RRA_nr10"],
+			["RRA_shock1r","RRA_n4"],
+			//mount
+			["RRA_n16","f18l"],
+			["RRA_n15","f18r"],
+		  	{"beamSpring":50001000,"beamDamp":2000},
+		  	{"beamDeform":835000,"beamStrength":1050000},
+		  	{"breakGroup":"wheel_RL"},
+		  	["rh2l","rh2ll"],
+			["RRA_shock1l","rh2ll"],
+			["RRA_shock2l","rh2ll"],
+			["RRA_n16","rh2ll"],
+			["RRA_nl6","rh2ll"],
+			["rh2l","RRA_n14"],
+			["RRA_n2","rh2l"],
+			["rh2l","RRA_n4"],
+			["rh2l","RRA_nl6"],
+			["RRA_n16","rh2l"],
+			["RRA_shock1l","rh2l"],
+			["RRA_shock2l","rh2l"],		  
+		  	{"breakGroup":"wheel_RR"},
+		  	["rh2r","RRA_nr10"],
+			["RRA_n15","rh2r"],
+			["RRA_shock2r","rh2r"],
+			["RRA_shock1r","rh2r"],
+			["rh2r","RRA_n4"],
+			["RRA_n2","rh2r"],
+			["rh2r","RRA_n14"],
+			["rh2r","rh2rr"],
+			["RRA_nr10","rh2rr"],
+			["RRA_shock1r","rh2rr"],
+			["RRA_shock2r","rh2rr"],
+			["RRA_n15","rh2rr"],
+		  	{"breakGroup":""},
 	],
-	"hubWheels": [
-			["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-			{"propulsed":0},
-	],
+	"pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //cancel out brake properties
+            {"brakeTorque":0},
+            {"parkingTorque":0},
+            {"enableBrakeThermals":false},
+            {"brakeDiameter":false},
+            {"brakeMass":false},
+            {"brakeType":false},
+            {"rotorMaterial":false},
+            {"brakeVentingCoef":false},
+    ],
 	"triangles": [
 			["id1:","id2:","id3:"],
-			{"group":""},	
-			["r2a1r","r2a2l","r2a2r"],
-			["r2a2l","r2a1r","r2a1l"],
-			["r2a4r","r2a3l","r2a3r"],
-			["r2a3l","r2a4r","r2a4l"],
-			["r2a4r","r2a2r","r2a2l"],
-			["r2a2l","r2a4l","r2a4r"],
-			["r2a1r","r2a3r","r2a3l"],
-			["r2a3l","r2a1l","r2a1r"],
+			{"group":""},				
 	],
 }
 "volvofmx_shock_R2": {
@@ -264,8 +163,10 @@
 		  {"beamSpring":100000,"beamDamp":20000,"beamDeform":36000000,"beamStrength":54000000},
 		  {"beamLimitSpring":100001000,"beamLimitDamp":4000},
 		  {"beamPrecompression":1.1, "beamType":"|BOUNDED", "beamLongBound":0.0, "beamShortBound":0.18},
-		  ["r2a1r","f9r"],
-		  ["r2a1l","f9l"],
+		  ["RRA_shock1r","f9r"],
+		  ["RRA_shock2r","f9r"],
+		  ["RRA_shock1l","f9l"],
+		  ["RRA_shock2l","f9l"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
 }

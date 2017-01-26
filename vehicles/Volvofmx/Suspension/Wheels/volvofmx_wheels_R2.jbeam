@@ -79,8 +79,8 @@
 
 			{"selfCollision":true}
 			{"collision":true}
-            ["R2R", "wheel_R2R","tire_R2R", "r2h1rr", "r2h1r", 9999,  "r2h2r", 1{"speedo" : true}],
-            ["R2L", "wheel_R2L","tire_R2L", "r2h1ll", "r2h1l", 9999,  "r2h2l", -1],
+            ["R2R", "wheel_R2R","tire_R2R", "rh2rr", "rh2r", 9999,  "r2h2r", 1{"speedo" : true}],
+            ["R2L", "wheel_R2L","tire_R2L", "rh2ll", "rh2l", 9999,  "r2h2l", -1],
     ],
 	"powertrain" : [
         ["type", "name", "inputName", "inputIndex"],
