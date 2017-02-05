@@ -10,9 +10,7 @@
 		//engine
 		["volvofmx_engine","volvofmx_engine_D11K330", "Volvo Engine and Transmission"],
 		//suspension
-		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],		
-		//supports
-		["volvofmx_supports","volvofmx_supports", "volvofmx Supports"],
+		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],
 		//Upfit
 		["volvofmx_upfit_back","volvofmx_fifthwheel","Rear Upfit"],
 		//Support
@@ -54,7 +52,7 @@
 		 {"nodeWeight":100},
 		 ["f4r", -0.4, -2.65, 1.05],
 		 ["f4", 0.0, -2.65, 1.05],
-		 ["f4l", 0.4, -2.65, 1.05],
+		 ["f4l", 0.4, -2.65, 1.05],///////////
 		 {"group":"volvofmx_shocktop_F2"},
 		 ["f5r", -0.434, -1.17, 1.05],
 		 ["f5", 0.0, -1.17, 1.05],
@@ -134,12 +132,12 @@
 		 {"selfCollision":false},
 		 {"collision":false},
 		 {"group":"volvofmx_framework"},		 
-			["fw1l",0.4,-2.65,1.55],			
+			["fw1l",0.4,-2.65,1.55],/////////			
 			["fw2r",-0.4,-2.65,1.55],
 			["fw3l",0.6,-2.4,2.5],
 			["fw4r",-0.6,-2.4,2.5],
-			["fw5l",0.4,-2.15,1.05],
-			["fw6l",0.4,-2.15,1.55],
+			["fw5l",0.4,-2.15,1.05],/////////////
+			["fw6l",0.4,-2.15,1.55],/////////////
 			["fw7r",-0.4,-2.15,1.05],
 			["fw8r",-0.4,-2.15,1.55],
 			["fw9l",0.434,0.0,1.55],
@@ -164,7 +162,7 @@
 			["cw14r",-0.283,-1.463,1.05],
 			["cw4r",-0.283,-1.463,2.05],
 			["cw15",0.0,-1.345,1.05],
-			["cw5",0.0,-1.345,2.05],
+			["cw5",0.0,-1.345,2.05],			
 		 {"group":""},
 		 
 	],
@@ -823,6 +821,8 @@
 			["cw7l","cw10"],
 			["cw18l","cw9"],
 			["cw8l","cw10"],
+
+			
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
 	"triangles": [

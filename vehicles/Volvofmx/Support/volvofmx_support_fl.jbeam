@@ -1,0 +1,108 @@
+{
+"volvofmx_supports_fl": {
+    "information":{
+        "authors":"Sarius",
+        "name":"Volvo FMX Support Front Left",
+        }
+        "slotType":"volvofmx_support_front_left",
+        "slots":[
+            ["type", "default", "description"]
+            ["volvofmx_sfl_move1","","Moving Part of the FL Support"],
+        ]
+        "nodes":[
+            ["id", "posX", "posY", "posZ"],
+            {"selfCollision":false}
+		 {"collision":false}
+		 //frame
+		 {"frictionCoef":0.5},
+		 {"nodeMaterial":"|NM_METAL"},
+		 {"nodeWeight":50},
+		 {"group":"volvofmx_support"},
+		    ["sfl1",5.0,-2.65,1.05],
+			["sfl2",5.0,-2.65,1.55],
+			["slf3",5.0,-2.15,1.05],
+			["slf4",5.0,-2.15,1.55],	
+		 {"group":""},		 
+    ],
+    "beams":[
+        ["id1:", "id2:", "options"],
+        {"beamSpring":25001000,"beamDamp":1000},
+		{"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+        {"breakGroup":"volvofmx_supprt_fl"},        
+			["slf3","sfl1"],
+			["slf3","fw5l"],
+			["slf3","slf4"],
+			["sfl1","f4l"],
+			["sfl1","sfl2"],
+			["f4l","fw5l"],
+			["f4l","fw1l"],
+			["fw5l","fw6l"],
+			["slf4","sfl2"],
+			["slf4","fw6l"],
+			["sfl2","fw1l"],
+			["fw1l","fw6l"],
+			["fw5l","slf4"],
+			["slf3","fw6l"],
+			["slf3","sfl2"],
+			["sfl1","slf4"],
+			["sfl2","fw6l"],
+			["slf4","fw1l"],
+			["sfl1","fw1l"],
+			["f4l","sfl2"],
+			["sfl1","fw5l"],
+			["slf3","f4l"],
+            //Connection to Framework
+            ["slf4","fw3l"],
+            ["sfl2","fw3l"],
+        {"breakGroup":""},
+
+    ]        
+    }	
+	"volvofmx_supports_move1": {
+		"information":{
+			"authors":"Sarius",
+			"name":"Volvo FMX Moving Part 1",
+			}
+			"slotType":"volvofmx_sfl_move1",
+			"slots":[
+				["type", "default", "description"]
+				["volvofmx_sfl_move2","","Hydraulic of the Front Left Support"],
+			]
+			"nodes":[
+				["id", "posX", "posY", "posZ"],
+				{"selfCollision":false}
+				{"collision":false}
+				//frame
+				{"frictionCoef":0.5},
+				{"nodeMaterial":"|NM_METAL"},
+				{"nodeWeight":50},
+				{"group":"volvofmx_support"},
+					
+				{"group":""},		 
+			],
+			"beams":[
+				["id1:", "id2:", "options"],
+				{"beamSpring":25001000,"beamDamp":1000},
+				{"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
+				{"breakGroup":"volvofmx_supprt_fl"},        
+					
+				{"breakGroup":""},
+
+			],
+
+			"rails": {
+		  //"name of rail":{"links:":["node1", "node2", "etc"], "looped":false, "capped":true}
+		  
+		  //Left side rail, for the ball.
+		  "support_fl_1":{"links:":["slf3", "fw5l"], "looped":false, "capped":true}
+		  "support_fl_2":{"links:":["slf4", "fw6l"], "looped":false, "capped":true}
+		  "support_fl_3":{"links:":["slf1", "f4l"], "looped":false, "capped":true}
+		  "support_fl_4":{"links:":["slf2", "fw1l"], "looped":false, "capped":true}	  
+		  
+		},
+			
+			
+
+		}
+	}
+
