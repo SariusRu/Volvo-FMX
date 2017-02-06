@@ -2,12 +2,12 @@
 "volvofmx_supports": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Supports",
+		"name":"VOLVO FMX Supports",
 	}		
     "slotType":"volvofmx_supports",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_front_left","volvofmx_supports_fl", "Volvo FMX Support Front Left"],		
+		["volvofmx_support_front_left","volvofmx_supports_fl", "VOLVO FMX Support Front Left"],		
 	]
 	}
 }

@@ -8,9 +8,9 @@
 	"slots": [
 		["type", "default", "description"]
 		//engine
-		["volvofmx_engine","volvofmx_engine_D11K330", "Volvo Engine and Transmission"],
+		["volvofmx_engine","volvofmx_engine_D11K330", "VOLVO Engine and Transmission"],
 		//suspension
-		["volvofmx_axle","volvofmx_axle", "Volvo FMX Axles"],
+		["volvofmx_axle","volvofmx_axle", "VOLVO FMX Axles"],
 		//Upfit
 		["volvofmx_upfit_back","volvofmx_fifthwheel","Rear Upfit"],
 		//Support
@@ -132,12 +132,12 @@
 		 {"selfCollision":false},
 		 {"collision":false},
 		 {"group":"volvofmx_framework"},		 
-			["fw1l",0.4,-2.65,1.55],/////////			
+			["fw1l",0.4,-2.65,1.55],			
 			["fw2r",-0.4,-2.65,1.55],
 			["fw3l",0.6,-2.4,2.5],
 			["fw4r",-0.6,-2.4,2.5],
-			["fw5l",0.4,-2.15,1.05],/////////////
-			["fw6l",0.4,-2.15,1.55],/////////////
+			["fw5l",0.4,-2.15,1.05],
+			["fw6l",0.4,-2.15,1.55],
 			["fw7r",-0.4,-2.15,1.05],
 			["fw8r",-0.4,-2.15,1.55],
 			["fw9l",0.434,0.0,1.55],
