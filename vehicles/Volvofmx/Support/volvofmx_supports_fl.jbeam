@@ -1,0 +1,251 @@
+{
+"volvofmx_supports_fl": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Support Front Left",
+	}	
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_support_fl_move","volvofmx_move_fl", "volvo FMX Move"],
+	]
+    "slotType" : "volvofmx_support_front_left",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		 {"selfCollision":false}
+		 {"collision":false}
+		 {"nodeWeight":12},
+		 {"group":"support_fl"}
+			["sfl1",5.0,-2.65,1.05],
+			["sfl2",5.0,-2.65,1.55],
+			["sfl3",5.0,-2.15,1.05],
+			["sfl4",5.0,-2.15,1.55],
+		 {"group":""},		 
+	]
+	"beams": [
+		  ["id1:", "id2:", "options"],		  
+		  {"beamSpring":19001000,"beamDamp":300},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
+		  {"breakGroup":"support_fl"},
+		  	["f4l","fw5l"],
+			["sfl3","sfl1"],
+			["sfl4","sfl2"],
+			["sfl3","fw5l"],
+			["sfl3","f4l"],
+			["sfl1","fw5l"],
+			["sfl4","fw1l"],
+			["fw5l","sfl4"],
+			["fw6l","sfl2"],
+			["fw1l","sfl2"],
+			["sfl4","sfl1"],
+			["sfl1","fw1l"],
+			["sfl3","sfl4"],
+			["sfl2","sfl3"],
+			["sfl3","fw6l"],
+			["sfl1","sfl2"],
+			["f4l","sfl1"],
+			["fw1l","f4l"],
+			["f4l","sfl2"],
+			["fw6l","fw5l"],
+			["fw1l","fw6l"],
+			["sfl4","fw6l"],
+			["sfl2","f4l"],
+			["sfl4","f4l"],
+			{"breakGroup":""},
+			["sfl2","fw3l"],
+			["sfl4","fw3l"],	  
+	],
+}
+"volvofmx_move_fl": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Support Move Front Left",
+	}	
+    "slotType" : "volvofmx_support_fl_move",
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_support_fl_hydro","volvofmx_hydro_fl", "volvo FMX Hydraulics"],
+	]
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		 {"selfCollision":true}
+		 {"collision":true}
+		 {"nodeWeight":12},
+		 {"group":"support_frame_fl_move"}
+			["sfl5",4.9,-2.65,1.05],
+			["sfl6",4.9,-2.65,1.55],
+			["sfl7",4.4,-2.65,1.05],
+			["sfl8",4.4,-2.65,1.55],
+			["sfl9",4.9,-2.15,1.05],
+			["sfl10",4.9,-2.15,1.55],
+			["sfl11",4.4,-2.15,1.05],
+			["sfl12",4.4,-2.15,1.55],
+		 {"group":""},
+	]
+	"beams": [
+		  ["id1:", "id2:", "options"],
+		  //--FRONT WHEELS--
+		  {"beamSpring":19001000,"beamDamp":300},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
+		  {"breakGroup":"support_fl"}
+		  	["sfl9","sfl5"],			
+			["sfl9","sfl11"],
+			["sfl9","sfl10"],
+			["sfl5","sfl7"],
+			["sfl5","sfl6"],
+			["sfl7","sfl11"],
+			["sfl7","sfl8"],
+			["sfl11","sfl12"],
+			["sfl10","sfl6"],
+			["sfl10","sfl12"],
+			["sfl6","sfl8"],
+			["sfl8","sfl12"],
+			["sfl11","sfl10"],
+			["sfl9","sfl12"],
+			["sfl9","sfl6"],
+			["sfl5","sfl10"],
+			["sfl10","sfl8"],
+			["sfl6","sfl12"],
+			["sfl11","sfl8"],
+			["sfl7","sfl12"],
+			["sfl7","sfl6"],
+			["sfl5","sfl8"],
+			["sfl9","sfl7"],
+			["sfl5","sfl11"],
+			["sfl11","sfl6"],
+			["sfl7","sfl10"],
+			["sfl5","sfl12"],
+			["sfl9","sfl8"],
+		  {"breakGroup":""}
+	],
+	"hydros": [
+			["id1:","id2:"],		    
+			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},			
+			{"breakGroup":"support_fl"},
+			["sfl8","fw5l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfl7","fw6l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfl12","f4l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfl11","fw1l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			{"breakGroup":""},
+			{"beamPrecompression":1},
+	],
+	"rails": {		  
+		  "Rail_fl1":{"links:":["sfl2", "fw1l"], "looped":false, "capped":true}
+		  "Rail_fl2":{"links:":["sfl4", "fw6l"], "looped":false, "capped":true}
+		  "Rail_fl3":{"links:":["sfl1", "f4l"], "looped":false, "capped":true}
+		  "Rail_fl4":{"links:":["sfl3", "fw5l"], "looped":false, "capped":true}
+	},	
+	"slidenodes": [	
+		 ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],		 
+		 ["sfl6", "Rail_fl1", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl10", "Rail_fl2", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl8", "Rail_fl1", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl12", "Rail_fl2", true, true, 0, 10000000, 100000000, 345435],
+
+		 ["sfl5", "Rail_fl3", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl9", "Rail_fl4", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl7", "Rail_fl3", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl11", "Rail_fl4", true, true, 0, 10000000, 100000000, 345435],
+	],
+}
+"volvofmx_hydro_fl": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Support Hydro Front Left",
+	}	
+    "slotType" : "volvofmx_support_fl_hydro",
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		 {"selfCollision":false}
+		 {"collision":false}
+		 {"nodeWeight":12},
+		 {"group":"support_fl"}
+			["sfl13",4.9,-2.65,-1.0],
+			["sfl14",4.4,-2.65,-1.0],
+			["sfl15",4.9,-2.15,-1.0],
+			["sfl16",4.4,-2.15,-1.0],
+		{"collision":true}		
+			["sfl17",4.9,-2.65,0.4],
+			["sfl18",4.4,-2.65,0.4],
+			["sfl19",4.65,-2.4,0.6],
+			["sfl20",4.9,-2.15,0.4],
+			["sfl21",4.4,-2.15,0.4],
+		 {"group":""},		 
+	]
+	"beams": [
+		  ["id1:", "id2:", "options"],		  
+		  {"beamSpring":19001000,"beamDamp":300},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
+		  {"breakGroup":"support_fl"},		  
+		  	["sfl15","sfl13"],
+			["sfl15","sfl16"],
+			["sfl15","sfl9"],
+			["sfl13","sfl14"],
+			["sfl13","sfl5"],
+			["sfl14","sfl16"],
+			["sfl14","sfl7"],
+			["sfl16","sfl11"],
+			["sfl15","sfl14"],
+			["sfl13","sfl16"],
+			["sfl16","sfl9"],
+			["sfl15","sfl11"],
+			["sfl16","sfl7"],
+			["sfl14","sfl11"],
+			["sfl13","sfl9"],
+			["sfl15","sfl5"],
+			["sfl14","sfl5"],
+			["sfl13","sfl7"],			
+			["sfl21","sfl18"],
+			["sfl20","sfl21"],
+			["sfl21","sfl17"],
+			["sfl17","sfl20"],
+			["sfl18","sfl19"],
+			["sfl19","sfl20"],
+			["sfl18","sfl17"],
+			["sfl17","sfl19"],
+			["sfl21","sfl19"],
+			["sfl18","sfl20"],
+		  {"breakGroup":""},	
+	],
+	"hydros": [
+			["id1:","id2:"],
+		    
+			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},
+			{"breakGroup":"support_fl"},
+			["sfl9","sfl19", {"inputSource":"hydros_fl","inLimit":2,"outLimit":3,"inRate":1,"outRate":1,"inputFactor":1.0}],
+			["sfl5","sfl19", {"inputSource":"hydros_fl","inLimit":2,"outLimit":3,"inRate":1,"outRate":1,"inputFactor":1.0}],
+			["sfl7","sfl19", {"inputSource":"hydros_fl","inLimit":2,"outLimit":3,"inRate":1,"outRate":1,"inputFactor":1.0}],
+			["sfl11","sfl19", {"inputSource":"hydros_fl","inLimit":2,"outLimit":3,"inRate":1,"outRate":1,"inputFactor":1.0}],
+			{"breakGroup":""},
+			{"beamPrecompression":1},
+	],
+	"rails": {
+		  "Rail_fl5":{"links:":["sfl7", "sfl14"], "looped":false, "capped":true}
+		  "Rail_fl6":{"links:":["sfl11", "sfl16"], "looped":false, "capped":true}
+		  "Rail_fl7":{"links:":["sfl9", "sfl15"], "looped":false, "capped":true}
+		  "Rail_fl8":{"links:":["sfl5", "sfl13"], "looped":false, "capped":true}
+		  
+	},	
+	"slidenodes": [	
+		 ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],		 
+		 ["sfl18", "Rail_fl5", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl21", "Rail_fl6", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl20", "Rail_fl8", true, true, 0, 10000000, 100000000, 345435],
+		 ["sfl17", "Rail_fl7", true, true, 0, 10000000, 100000000, 345435],		
+	],
+}
+}

@@ -1,1 +1,1 @@
-%vehicleName = "Volvo FMX";
+%vehicleName = "VOLVO FMX";
