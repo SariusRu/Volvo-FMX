@@ -2,7 +2,7 @@
 "volvofmx_axle": {
 	"information":{
 		"authors":"Sarius",
-		"name":"VOLVO FMX Axles",
+		"name":"Axles",
 	}	
 	"slots": [
 		["type", "default", "description"]

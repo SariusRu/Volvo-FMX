@@ -10,7 +10,7 @@
 		//engine
 		["volvofmx_engine","volvofmx_engine_D11K330", "VOLVO Engine and Transmission"],
 		//suspension
-		["volvofmx_axle","volvofmx_axle", "VOLVO FMX Axles"],
+		["volvofmx_axle","volvofmx_axle", "Axles"],
 		//Upfit
 		["volvofmx_upfit_back","volvofmx_fifthwheel","Rear Upfit"],
 		//Support
@@ -134,8 +134,8 @@
 		 {"group":"volvofmx_framework"},		 
 			["fw1l",0.4,-2.65,1.55],			
 			["fw2r",-0.4,-2.65,1.55],
-			["fw3l",0.6,-2.4,2.5],
-			["fw4r",-0.6,-2.4,2.5],
+			["fw3l",1.5,-2.4,3.5],
+			["fw4r",-1.5,-2.4,3.5],
 			["fw5l",0.4,-2.15,1.05],
 			["fw6l",0.4,-2.15,1.55],
 			["fw7r",-0.4,-2.15,1.05],

@@ -2,7 +2,7 @@
 "volvofmx_supports_fl": {
 	"information":{
 		"authors":"Sarius",
-		"name":"VOLVO FMX Support Front Left",
+		"name":"Support Front Left",
 	}	
 	"slots": [
 		["type", "default", "description"]
@@ -55,13 +55,15 @@
 			["sfl4","fw6l"],
 			["sfl2","f4l"],
 			["sfl4","f4l"],
-			{"breakGroup":""},	  
+			{"breakGroup":""},
+			["sfl2","fw3l"],
+			["sfl4","fw3l"],	  
 	],
 }
 "volvofmx_move_fl": {
 	"information":{
 		"authors":"Sarius",
-		"name":"VOLVO FMX Support Move Front Left",
+		"name":"Support Move Front Left",
 	}	
     "slotType" : "volvofmx_support_fl_move",
 	"slots": [
@@ -158,7 +160,7 @@
 "volvofmx_hydro_fl": {
 	"information":{
 		"authors":"Sarius",
-		"name":"VOLVO FMX Support Hydro Front Left",
+		"name":"Support Hydro Front Left",
 	}	
     "slotType" : "volvofmx_support_fl_hydro",
 	"scalebeamSpring":0.80,
@@ -181,8 +183,7 @@
 			["sfl19",4.65,-2.4,0.6],
 			["sfl20",4.9,-2.15,0.4],
 			["sfl21",4.4,-2.15,0.4],
-		 {"group":""},
-		 
+		 {"group":""},		 
 	]
 	"beams": [
 		  ["id1:", "id2:", "options"],		  
@@ -232,18 +233,13 @@
 			{"breakGroup":""},
 			{"beamPrecompression":1},
 	],
-
-
-
-
 	"rails": {
 		  "Rail_fl5":{"links:":["sfl7", "sfl14"], "looped":false, "capped":true}
 		  "Rail_fl6":{"links:":["sfl11", "sfl16"], "looped":false, "capped":true}
 		  "Rail_fl7":{"links:":["sfl9", "sfl15"], "looped":false, "capped":true}
 		  "Rail_fl8":{"links:":["sfl5", "sfl13"], "looped":false, "capped":true}
 		  
-	},
-	
+	},	
 	"slidenodes": [	
 		 ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],		 
 		 ["sfl18", "Rail_fl5", true, true, 0, 10000000, 100000000, 345435],
