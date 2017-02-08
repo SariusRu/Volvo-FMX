@@ -16,16 +16,16 @@
          ["volvofmx_brakedrum_F", ["wheel_FL","wheel_FR","wheelhub_FR","wheelhub_FL"]],
     ],
     "pressureWheels": [
-        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-        //brake properties
-        {"brakeTorque":14000},
-        {"parkingTorque":0},
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
+        //brakes
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
         {"enableBrakeThermals":true},
         {"brakeDiameter":0.42},
-        {"brakeMass":45.0},
+        {"brakeMass":40.0},
         {"brakeType":"drum"},
         {"rotorMaterial":"steel"},
         {"brakeVentingCoef":1.0},
@@ -51,16 +51,16 @@
          ["volvofmx_brakedrum_F", ["wheel_FL","wheel_FR","wheelhub_FR","wheelhub_FL"]],
     ],
     "pressureWheels": [
-        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-        //brake properties
-        {"brakeTorque":14000},
-        {"parkingTorque":0},
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
+        //brakes
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
         {"enableBrakeThermals":true},
         {"brakeDiameter":0.42},
-        {"brakeMass":45.0},
+        {"brakeMass":40.0},
         {"brakeType":"drum"},
         {"rotorMaterial":"steel"},
         {"brakeVentingCoef":1.0},
@@ -88,8 +88,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":6000},
-        {"parkingTorque":6000},
+        {"brakeTorque":400000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -121,9 +121,10 @@
          ["volvofmx_brakedrum_R_2", ["wheel_RR_2","wheel_RL_2","wheelhub_RR_2","wheelhub_RL_2"]],
     ],
     "pressureWheels": [
-        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-        {"brakeTorque":6000},
-        {"parkingTorque":6000},
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
+        //brakes
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
