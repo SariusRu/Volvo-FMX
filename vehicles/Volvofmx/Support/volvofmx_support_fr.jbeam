@@ -31,11 +31,11 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
 		  {"breakGroup":"support_fr"},
-		  	["f4r","fw7r"],
+		  	["f19r","fw7r"],
 			["sfr3","sfr1"],
 			["sfr4","sfr2"],
 			["sfr3","fw7r"],
-			["sfr3","f4r"],
+			["sfr3","f19r"],
 			["sfr1","fw7r"],
 			["sfr4","fw2r"],
 			["fw7r","sfr4"],
@@ -47,14 +47,14 @@
 			["sfr2","sfr3"],
 			["sfr3","fw8r"],
 			["sfr1","sfr2"],
-			["f4r","sfr1"],
-			["fw2r","f4r"],
-			["f4r","sfr2"],
+			["f19r","sfr1"],
+			["fw2r","f19r"],
+			["f19r","sfr2"],
 			["fw8r","fw7r"],
 			["fw2r","fw8r"],
 			["sfr4","fw8r"],
-			["sfr2","f4r"],
-			["sfr4","f4r"],
+			["sfr2","f19r"],
+			["sfr4","f19r"],
 			{"breakGroup":""},
 			[]	  
 	],
@@ -132,7 +132,7 @@
 			{"breakGroup":"support_fr"},
 			["sfr8","fw7r", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["sfr7","fw8r", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["sfr12","f4r", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfr12","f19r", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["sfr11","fw2r", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			{"breakGroup":""},
 			{"beamPrecompression":1},
@@ -140,7 +140,7 @@
 	"rails": {		  
 		  "Rail_fr1":{"links:":["sfr2", "fw2r"], "looped":false, "capped":true}
 		  "Rail_fr2":{"links:":["sfr4", "fw8r"], "looped":false, "capped":true}
-		  "Rail_fr3":{"links:":["sfr1", "f4r"], "looped":false, "capped":true}
+		  "Rail_fr3":{"links:":["sfr1", "f19r"], "looped":false, "capped":true}
 		  "Rail_fr4":{"links:":["sfr3", "fw7r"], "looped":false, "capped":true}
 	},	
 	"slidenodes": [	
