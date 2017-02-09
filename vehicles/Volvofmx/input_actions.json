@@ -17,21 +17,21 @@
 // "order":      helps set the display order in the Controls menu
 {
 //Front
-"volvofmx_extend":  {"order":  2, "onChange":"electrics.values.supports_f_input =  -1.5* VALUE", "title": "FRONT: Extend Support", "desc": "Extends the Front Support" },
-"volvofmx_retract":  {"order":  3, "onChange":"electrics.values.supports_f_input = 1.5* VALUE", "title": "FRONT: Retract Support", "desc": "Retracts the Front Support" },
-"volvofmx_hydros_fl_higher":  {"order":  8, "onChange":"electrics.values.hydros_fl_input =  1.5* VALUE", "title": "FRONT LEFT: Lower Support", "desc": "Lowers the front left support" },
-"volvofmx_hydros_fl_lower":  {"order":  9, "onChange":"electrics.values.hydros_fl_input = -1.5* VALUE", "title": "FRONT LEFT: Raise Support", "desc": "Raises the front left support" },
-"volvofmx_hydros_fr_higher":  {"order":  10, "onChange":"electrics.values.hydros_fr_input =  1.5* VALUE", "title": "FRONT RIGHT: Lower Support", "desc": "Lowers the front right support" },
-"volvofmx_hydros_fr_lower":  {"order":  11, "onChange":"electrics.values.hydros_fr_input = -1.5* VALUE", "title": "FRONT RIGHT: Raise Support", "desc": "Raises the front right support" },
+"volvofmx_extend":  {"order":  2, "onChange":"electrics.values.supports_f_input =  -2.5* VALUE", "title": "FRONT: Extend Support", "desc": "Extends the Front Support" },
+"volvofmx_retract":  {"order":  3, "onChange":"electrics.values.supports_f_input = 2.5* VALUE", "title": "FRONT: Retract Support", "desc": "Retracts the Front Support" },
+"volvofmx_hydros_fl_higher":  {"order":  8, "onChange":"electrics.values.hydros_fl_input =  2.5* VALUE", "title": "FRONT LEFT: Lower Support", "desc": "Lowers the front left support" },
+"volvofmx_hydros_fl_lower":  {"order":  9, "onChange":"electrics.values.hydros_fl_input = -2.5* VALUE", "title": "FRONT LEFT: Raise Support", "desc": "Raises the front left support" },
+"volvofmx_hydros_fr_higher":  {"order":  10, "onChange":"electrics.values.hydros_fr_input =  2.5* VALUE", "title": "FRONT RIGHT: Lower Support", "desc": "Lowers the front right support" },
+"volvofmx_hydros_fr_lower":  {"order":  11, "onChange":"electrics.values.hydros_fr_input = -2.5* VALUE", "title": "FRONT RIGHT: Raise Support", "desc": "Raises the front right support" },
 //Rear
-"volvofmx_tilt_extend":  {"order":  4, "onChange":"electrics.values.supports_tilt_input =  1.5* VALUE", "title": "REAR: Tilt Support out", "desc": "" },
-"volvofmx_tilt_retract":  {"order":  5, "onChange":"electrics.values.supports_tilt_input = -1.5* VALUE", "title": "REAR: Tilt Support in", "desc": "" },
-"volvofmx_extend_rear":  {"order":  6, "onChange":"electrics.values.supports_r_input =  -1.5* VALUE", "title": "REAR: Extend Support", "desc": "Extends the Rear Support" },
-"volvofmx_retract_rear":  {"order":  7, "onChange":"electrics.values.supports_r_input = 1.5* VALUE", "title": "REAR: Retract Support", "desc": "Retracts the Rear Support" },
-"volvofmx_hydros_rl_higher":  {"order":  12, "onChange":"electrics.values.hydros_rl_input =  1.5* VALUE", "title": "REAR LEFT: Lower Support", "desc": "Lowers the rear left support" },
-"volvofmx_hydros_rl_lower":  {"order":  13, "onChange":"electrics.values.hydros_rl_input = -1.5* VALUE", "title": "REAR LEFT: Raise Support", "desc": "Raises the rear left support" },
-"volvofmx_hydros_rr_higher":  {"order":  14, "onChange":"electrics.values.hydros_rr_input =  1.5* VALUE", "title": "REAR RIGHT: Lower Support", "desc": "Lowers the rear right support" },
-"volvofmx_hydros_rr_lower":  {"order":  15, "onChange":"electrics.values.hydros_rr_input = -1.5* VALUE", "title": "REAR RIGHT: Raise Support", "desc": "Raises the rear right support" },
+"volvofmx_tilt_extend":  {"order":  4, "onChange":"electrics.values.supports_tilt_input =  2.5* VALUE", "title": "REAR: Tilt Support out", "desc": "" },
+"volvofmx_tilt_retract":  {"order":  5, "onChange":"electrics.values.supports_tilt_input = -2.5* VALUE", "title": "REAR: Tilt Support in", "desc": "" },
+"volvofmx_extend_rear":  {"order":  6, "onChange":"electrics.values.supports_r_input =  -2.5* VALUE", "title": "REAR: Extend Support", "desc": "Extends the Rear Support" },
+"volvofmx_retract_rear":  {"order":  7, "onChange":"electrics.values.supports_r_input = 2.5* VALUE", "title": "REAR: Retract Support", "desc": "Retracts the Rear Support" },
+"volvofmx_hydros_rl_higher":  {"order":  12, "onChange":"electrics.values.hydros_rl_input =  2.5* VALUE", "title": "REAR LEFT: Lower Support", "desc": "Lowers the rear left support" },
+"volvofmx_hydros_rl_lower":  {"order":  13, "onChange":"electrics.values.hydros_rl_input = -2.5* VALUE", "title": "REAR LEFT: Raise Support", "desc": "Raises the rear left support" },
+"volvofmx_hydros_rr_higher":  {"order":  14, "onChange":"electrics.values.hydros_rr_input =  2.5* VALUE", "title": "REAR RIGHT: Lower Support", "desc": "Lowers the rear right support" },
+"volvofmx_hydros_rr_lower":  {"order":  15, "onChange":"electrics.values.hydros_rr_input = -2.5* VALUE", "title": "REAR RIGHT: Raise Support", "desc": "Raises the rear right support" },
 "volvofmx_differential_toggle":  {"order":  1, "onChange":"", "title": "Toggle Differential", "desc": "Toggles the fifferential of the truck" },
 
 }
