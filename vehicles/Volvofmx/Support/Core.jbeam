@@ -1,0 +1,25 @@
+{
+    "volvofmx_core":{
+    "information":{
+        "authors":"Sarius",
+        "name":"Crane + Support Core"
+    }
+    "slotType":"volvofmx_support_crane",
+    "slots":[
+        ["type", "default", "description"]
+        ["volvofmx_supports","volvofmx_supports","Support"],
+    ],
+    "nodes":[
+            ["id", "posX", "posY", "posZ"],
+			{"selfCollision":false}
+			{"collision":true}		 
+			{"frictionCoef":0.5},
+			{"nodeMaterial":"|NM_METAL"},
+			{"nodeWeight":100},
+			{"group":"volvofmx_core"},
+
+            {"group":""},	
+    ]
+
+    }
+}

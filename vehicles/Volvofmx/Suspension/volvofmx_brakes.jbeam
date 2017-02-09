@@ -18,8 +18,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brake properties
-        {"brakeTorque":14000},
-        {"parkingTorque":0},
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -53,8 +53,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brake properties
-        {"brakeTorque":14000},
-        {"parkingTorque":0},
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -88,8 +88,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":6000},
-        {"parkingTorque":6000},
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -122,8 +122,8 @@
     ],
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-        {"brakeTorque":6000},
-        {"parkingTorque":6000},
+        {"brakeTorque":40000},
+        {"parkingTorque":40000},
         {"brakeSpring":100},
             
         //brake thermals
