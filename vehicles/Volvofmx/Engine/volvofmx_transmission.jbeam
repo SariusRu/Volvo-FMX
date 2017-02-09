@@ -2,7 +2,7 @@
 "volvofmx_transmission_AT2412F": {
     "information":{
         "authors":"BeamNG",
-        "name":"VOLVO AT2412F",
+        "name":" AT2412F",
         "value":3000,
     }
     "slotType" : "volvofmx_transmission",
@@ -111,14 +111,14 @@
             ["tnl1","en3r"],
             ["tnr3","en3l"],
             //mount to frame
-            ["tnr8","f5r"],
+            ["tnr8","f31r"],
             ["tnr8","f5"],
             ["tnl5","f5"],
-            ["tnl5","f5l"],
-            ["tnl4","f15r"],
-            ["tnl4","f15"],
-            ["tnr7","f15"],
-            ["tnr7","f15l"],
+            ["tnl5","f33l"],
+            ["tnl4","f34r"],
+            ["tnl4","f35"],
+            ["tnr7","f35"],
+            ["tnr7","f36l"],
     ],
     "triangles": [
             ["id1:","id2:","id3:"],
