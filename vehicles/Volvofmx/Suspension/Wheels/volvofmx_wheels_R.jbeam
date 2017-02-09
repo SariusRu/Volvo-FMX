@@ -2,7 +2,7 @@
 "volvofmx_wheel_R": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx Rear Wheels",
+		"name":"Rear Wheels",
 	}
 	"variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]

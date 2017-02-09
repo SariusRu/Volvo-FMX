@@ -2,15 +2,15 @@
 "volvofmx_axle_R2": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx rear 2 Axle",
+		"name":"Rear Rear Axle",
 	}
     "slotType" : "volvofmx_axle_R2",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_shock_R2","volvofmx_shock_R2", "volvofmx Rear 2 Shocks+airbags"],
-		["volvofmx_brake_R2","volvofmx_brake_R2", "volvofmx Rear 2 Brakes"],
-		["volvofmx_wheel_R2","volvofmx_wheel_R2", "volvofmx Rear 2 Wheels"],
-		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Long Driveshaft"],
+		["volvofmx_shock_R2","volvofmx_shock_R2", "Rear Rear Shocks+airbags"],
+		["volvofmx_brake_R2","volvofmx_brake_R2", "Rear Rear Brakes"],
+		["volvofmx_wheel_R2","volvofmx_wheel_R2", "Rear Rear Wheels"],
+		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Rear Intershaft"],
         ["volvofmx_differential_R_2","volvofmx_differential_R_2", "Rear Rear Differential"],
 	],
 	"scalebeamSpring":0.80,

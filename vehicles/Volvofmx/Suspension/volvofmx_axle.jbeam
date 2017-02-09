@@ -6,10 +6,10 @@
 	}	
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_axle_F","volvofmx_axle_F", "volvofmx front Axle"],
-        ["volvofmx_axle_F2","volvofmx_axle_F2", "volvofmx second front Axle"],
-        ["volvofmx_axle_R","volvofmx_axle_R", "volvofmx rear Axle"],
-        ["volvofmx_axle_R2","volvofmx_axle_R2", "volvofmx second rear Axle"],
+		["volvofmx_axle_F","volvofmx_axle_F", "Front Axle"],
+        ["volvofmx_axle_F2","volvofmx_axle_F2", "Second Front Axle"],
+        ["volvofmx_axle_R","volvofmx_axle_R", "Rear Axle"],
+        ["volvofmx_axle_R2","volvofmx_axle_R2", "Second Rear Axle"],
 	]
     "slotType" : "volvofmx_axle",
 	"scalebeamSpring":0.80,

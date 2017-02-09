@@ -7,10 +7,10 @@
     "slotType" : "volvofmx_axle_R",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_shock_R","volvofmx_shock_R", "volvofmx Rear Shocks+airbags"],
-		["volvofmx_brake_R","volvofmx_brake_R", "volvofmx Rear Brakes"],
-		["volvofmx_wheel_R","volvofmx_wheel_R", "volvofmx Rear Wheels"],
-        ["volvofmx_differential_R_1","volvofmx_differential_R_1", "Front Rear Differential"],    
+		["volvofmx_shock_R","volvofmx_shock_R", "Rear Shocks + Airbags"],
+		["volvofmx_brake_R","volvofmx_brake_R", "Rear Brakes"],
+		["volvofmx_wheel_R","volvofmx_wheel_R", "Rear Wheels"],
+        ["volvofmx_differential_R_1","volvofmx_differential_R_1", "Front Rear Differential"],
 	],
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
@@ -141,7 +141,7 @@
 "volvofmx_shock_R": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx rear Shocks",
+		"name":"Rear Shocks",
 	}
     "slotType" : "volvofmx_shock_R",
 	"scalebeamSpring":0.80,
