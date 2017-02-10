@@ -1,3 +1,4 @@
+{
 "volvofmx_brake_F": {
     "information":{
         "authors":"BeamNG",
@@ -66,7 +67,8 @@
         "brakePressureDelay":0.6,
     },
 }
-"volvofmx_brake_R": {    "information":{
+"volvofmx_brake_R": {
+    "information":{
         "authors":"BeamNG",
         "name":"Front Rear Brakes",
         "value":900,
