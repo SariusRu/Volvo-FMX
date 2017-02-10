@@ -6,7 +6,7 @@
 	}	
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_fr_move","volvofmx_move_fr", "volvo FMX Move"],
+		["volvofmx_support_fr_move","volvofmx_move_fr", "Moving Part"],
 	]
     "slotType" : "volvofmx_support_front_right",
 	"scalebeamSpring":0.80,
@@ -56,12 +56,12 @@
 "volvofmx_move_fr": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Support Move Front Right",
+		"name":"Moving Part Front Right",
 	}	
     "slotType" : "volvofmx_support_fr_move",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_fr_hydro","volvofmx_hydro_fr", "volvo FMX Hydraulics"],
+		["volvofmx_support_fr_hydro","volvofmx_hydro_fr", "Hydraulics"],
 	]
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
@@ -153,7 +153,7 @@
 "volvofmx_hydro_fr": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Support Hydro Front Right",
+		"name":"Hydraulics Front Right",
 	}	
     "slotType" : "volvofmx_support_fr_hydro",
 	"scalebeamSpring":0.80,

@@ -2,11 +2,11 @@
 "volvofmx_supports_rl": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Support Rear Left",
+		"name":"Support Rear Left",
 	}	
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_rl_hydro","volvofmx_hydro_rl", "volvofmx Steering"],
+		["volvofmx_support_rl_move","volvofmx_move_rl", "Moving Part"],
 	]
     "slotType" : "volvofmx_support_rear_left",
 	"scalebeamSpring":0.80,
@@ -18,29 +18,14 @@
 		 {"selfCollision":false}
 		 {"collision":false}
 		 {"nodeWeight":12},
-		 {"group":"support_frame_rl"}
+		 {"group":"support_rl"}
 			["srl_nl0",0.434,4.35,1.05],
 			["srl_nl1",0.434,4.35,1.55],
 			["srl_nl4",0.934,4.35,1.05],
 			["srl_nl5",0.934,4.35,1.55],
 			["srl_n2",0.934,-0.65,1.05],
 			["srl_n3",0.934,-0.65,1.55],
-		{"collision":true}
-		{"group":"support_rl"}
-			["srl_Move_nl0",0.434,3.73,1.05],
-			["srl_Move_nl1",0.434,3.73,1.55],
-			["srl_Move_nl2",0.934,3.73,1.05],
-			["srl_Move_nl3",0.934,3.73,1.55],
-			["srl_Move_nl4",0.434,3.23,1.05],
-			["srl_Move_nl5",0.434,3.23,1.55],
-			["srl_Move_nl6",0.934,3.23,1.05],
-			["srl_Move_nl7",0.934,3.23,1.55],
-			 {"nodeWeight":12},
-		 {"frictionCoef":0.7},
-		 {"nodeMaterial":"|NM_METAL"},
-
 		 {"group":""},
-		 
 	]
 	"beams": [
 		  ["id1:", "id2:", "options"],
@@ -72,9 +57,50 @@
 			["srl_nl5","srl_n3"],
 			["srl_Move_nl4","srl_Move_nl0"],
 			["srl_n3","f39l"],
-			["srl_n2","fw3l"],
-			//Moving Part
-			["srl_Move_nl4","srl_Move_nl6"],
+			["srl_n2","fw3l"],			
+			//
+			["srl_nl1","fw6l"],
+			["srl_nl5","fw6l"],
+	],	
+}
+"volvofmx_move_rl": {
+	"information":{
+		"authors":"Sarius",
+		"name":"Moving Part",
+	}	
+    "slotType" : "volvofmx_support_rl_move",
+	"slots": [
+		["type", "default", "description"]
+		["volvofmx_support_rl_hydro","volvofmx_hydro_rl", "Hydraulics"],
+	]
+	"scalebeamSpring":0.80,
+	"scalebeamDamp":0.80,
+	"scalebeamDeform":1.15,
+	"scalebeamStrength":1.15,
+	"nodes": [
+		["id", "posX", "posY", "posZ"],
+		 {"selfCollision":false}
+		 {"collision":false}
+		 {"nodeWeight":12},
+		{"group":"support_rl"}
+			["srl_Move_nl0",0.434,3.73,1.05],
+			["srl_Move_nl1",0.434,3.73,1.55],
+			["srl_Move_nl2",0.934,3.73,1.05],
+			["srl_Move_nl3",0.934,3.73,1.55],
+			["srl_Move_nl4",0.434,3.23,1.05],
+			["srl_Move_nl5",0.434,3.23,1.55],
+			["srl_Move_nl6",0.934,3.23,1.05],
+			["srl_Move_nl7",0.934,3.23,1.55],
+		 {"group":""},
+	]
+	"beams": [
+		  ["id1:", "id2:", "options"],
+		  //--FRONT WHEELS--
+		  {"beamSpring":19001000,"beamDamp":300},
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
+		  //FRAME
+		  	["srl_Move_nl4","srl_Move_nl6"],
 			["srl_Move_nl4","srl_Move_nl5"],
 			["srl_Move_nl0","srl_Move_nl2"],
 			["srl_Move_nl0","srl_Move_nl1"],
@@ -101,47 +127,24 @@
 			["srl_Move_nl2","srl_Move_nl5"],
 			["srl_Move_nl0","srl_Move_nl7"],
 			["srl_Move_nl4","srl_Move_nl3"],
-			//
-			["srl_nl1","fw6l"],
-			["srl_nl5","fw6l"],
-
-			
-			
-		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
-	
 	"hydros": [
-			["id1:","id2:"],
-		    //{"breakGroupType":1},
+			["id1:","id2:"],		    
 			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},
 			{"breakGroup":"support_rl_hydro"},
-			["srl_n2","f32", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			//["srl_n3","framework_3_2_1", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-
+			["srl_n2","f32", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],			
 			["srl_n2","srl_Move_nl5", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["srl_Move_nl7","f39l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["srl_Move_nl7","srl_n3", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["srl_Move_nl6","fw3l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-
-			{"breakGroup":""},
-			{"beamPrecompression":1},
+			{"breakGroup":""},			
 	],
-	
-
-
-
-
 	"rails": {
-		  //"name of rail":{"links:":["node1", "node2", "etc"], "looped":false, "capped":true}
-		  
-		  
 		  "Rail_rl1":{"links:":["srl_nl1", "fw3l"], "looped":false, "capped":true}
 		  "Rail_rl2":{"links:":["srl_nl5", "srl_n3"], "looped":false, "capped":true}
 		  "Rail_rl3":{"links:":["srl_nl0", "f39l"], "looped":false, "capped":true}
-		  "Rail_rl4":{"links:":["srl_nl4", "srl_n2"], "looped":false, "capped":true}
-		  
-	},
-	
+		  "Rail_rl4":{"links:":["srl_nl4", "srl_n2"], "looped":false, "capped":true}		  
+	},	
 	"slidenodes": [	
 		 ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],		 
 		 ["srl_Move_nl1", "Rail_rl1", true, true, 0, 10000000, 100000000, 345435],
@@ -159,7 +162,7 @@
 "volvofmx_hydro_rl": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Support Hydro Rear Left",
+		"name":"Hydraulics Rear Left",
 	}	
     "slotType" : "volvofmx_support_rl_hydro",
 	"scalebeamSpring":0.80,

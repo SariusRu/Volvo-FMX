@@ -6,7 +6,7 @@
 	}	
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_fl_move","volvofmx_move_fl", "volvo FMX Move"],
+		["volvofmx_support_fl_move","volvofmx_move_fl", "Moving Part"],
 	]
     "slotType" : "volvofmx_support_front_left",
 	"scalebeamSpring":0.80,
@@ -61,7 +61,7 @@
     "slotType" : "volvofmx_support_fl_move",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_fl_hydro","volvofmx_hydro_fl", "volvo FMX Hydraulics"],
+		["volvofmx_support_fl_hydro","volvofmx_hydro_fl", "Hydraulics"],
 	]
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
