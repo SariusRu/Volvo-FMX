@@ -2,11 +2,11 @@
 "volvofmx_supports_rr": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Support Front Left",
+		"name":"Support Front Left",
 	}	
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_rr_move","volvofmx_move_rr", "volvofmx Steering"],
+		["volvofmx_support_rr_move","volvofmx_move_rr", "Moving Part"],
 	]
     "slotType" : "volvofmx_support_rear_right",
 	"scalebeamSpring":0.80,
@@ -67,15 +67,14 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
 }
-
 "volvofmx_move_rr": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Support Hydro Front Left",
+		"name":"Moving Part Rear Right",
 	}
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_support_rr_hydro","volvofmx_hydro_rr", "volvofmx Hydraulics"],
+		["volvofmx_support_rr_hydro","volvofmx_hydro_rr", "Hydraulics"],
 	]	
     "slotType" : "volvofmx_support_rr_move",
 	"scalebeamSpring":0.80,
@@ -170,7 +169,7 @@
 "volvofmx_hydro_rr": {
 	"information":{
 		"authors":"Sarius",
-		"name":"Volvo FMX Support Hydro Front Left",
+		"name":"Hydraulics Rear Right",
 	}	
     "slotType" : "volvofmx_support_rr_hydro",
 	"scalebeamSpring":0.80,
