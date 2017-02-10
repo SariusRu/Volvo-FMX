@@ -19,12 +19,12 @@
 		 {"collision":false}
 		 {"nodeWeight":12},
 		 {"group":"support_frame_rl"}
-			["srl_nl0",0.434,3.83,1.05],
-			["srl_nl1",0.434,3.83,1.55],
-			["srl_nl4",0.934,3.83,1.05],
-			["srl_nl5",0.934,3.83,1.55],
-			["srl_n2",0.934,-1.17,1.05],
-			["srl_n3",0.934,-1.17,1.55],
+			["srl_nl0",0.434,4.35,1.05],
+			["srl_nl1",0.434,4.35,1.55],
+			["srl_nl4",0.934,4.35,1.05],
+			["srl_nl5",0.934,4.35,1.55],
+			["srl_n2",0.934,-0.65,1.05],
+			["srl_n3",0.934,-0.65,1.55],
 		{"collision":true}
 		{"group":"support_rl"}
 			["srl_Move_nl0",0.434,3.73,1.05],
@@ -48,34 +48,31 @@
 		  {"beamSpring":19001000,"beamDamp":300},
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
-		  	["f33l","srl_n2"],
+		  	["f39l","srl_n2"],
 			["srl_nl4","srl_nl0"],
 			["srl_nl5","srl_nl1"],
 			["srl_nl4","srl_n2"],
-			["srl_nl4","f33l"],
+			["srl_nl4","f39l"],
 			["srl_nl0","srl_n2"],
-			["srl_nl5","fw9l"],
+			["srl_nl5","fw3l"],
 			["srl_n2","srl_nl5"],
 			["srl_n3","srl_nl1"],
-			["fw9l","srl_nl1"],
+			["fw3l","srl_nl1"],
 			["srl_nl5","srl_nl0"],
-			["srl_nl0","fw9l"],
+			["srl_nl0","fw3l"],
 			["srl_nl4","srl_nl5"],
 			["srl_nl1","srl_nl4"],
 			["srl_nl4","srl_n3"],
 			["srl_nl0","srl_nl1"],
-			["f33l","srl_nl0"],
-			["fw9l","f33l"],
-			["f33l","srl_nl1"],
+			["f39l","srl_nl0"],
+			["fw3l","f39l"],
+			["f39l","srl_nl1"],
 			["srl_n3","srl_n2"],
-			["fw9l","srl_n3"],
+			["fw3l","srl_n3"],
 			["srl_nl5","srl_n3"],
 			["srl_Move_nl4","srl_Move_nl0"],
-			["srl_n3","f33l"],
-			["srl_n2","fw9l"],
-			["srl_nl1","framework_4_2_1"],
-			["srl_nl5","framework_4_2_1"],
-
+			["srl_n3","f39l"],
+			["srl_n2","fw3l"],
 			//Moving Part
 			["srl_Move_nl4","srl_Move_nl6"],
 			["srl_Move_nl4","srl_Move_nl5"],
@@ -115,13 +112,13 @@
 		    //{"breakGroupType":1},
 			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},
 			{"breakGroup":"support_rl_hydro"},
-			["srl_n2","cw11", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["srl_n2","f32", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			//["srl_n3","framework_3_2_1", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 
 			["srl_n2","srl_Move_nl5", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["srl_Move_nl7","f33l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["srl_Move_nl7","f39l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["srl_Move_nl7","srl_n3", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["srl_Move_nl6","fw9l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["srl_Move_nl6","fw3l", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 
 			{"breakGroup":""},
 			{"beamPrecompression":1},
@@ -135,9 +132,9 @@
 		  //"name of rail":{"links:":["node1", "node2", "etc"], "looped":false, "capped":true}
 		  
 		  
-		  "Rail_rl1":{"links:":["srl_nl1", "fw9l"], "looped":false, "capped":true}
+		  "Rail_rl1":{"links:":["srl_nl1", "fw3l"], "looped":false, "capped":true}
 		  "Rail_rl2":{"links:":["srl_nl5", "srl_n3"], "looped":false, "capped":true}
-		  "Rail_rl3":{"links:":["srl_nl0", "f33l"], "looped":false, "capped":true}
+		  "Rail_rl3":{"links:":["srl_nl0", "f39l"], "looped":false, "capped":true}
 		  "Rail_rl4":{"links:":["srl_nl4", "srl_n2"], "looped":false, "capped":true}
 		  
 	},

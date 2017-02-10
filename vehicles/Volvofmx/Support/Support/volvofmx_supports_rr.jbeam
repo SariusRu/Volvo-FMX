@@ -19,12 +19,12 @@
 		 {"collision":false}
 		 {"nodeWeight":12},
 		 {"group":"support_frame_rr"}
-			["srr_nl0",-0.434,3.83,1.05],
-			["srr_nl1",-0.434,3.83,1.55],
-			["srr_nl4",-0.934,3.83,1.05],
-			["srr_nl5",-0.934,3.83,1.55],
-			["srr_n2",-0.934,-1.17,1.05],
-			["srr_n3",-0.934,-1.17,1.55],
+			["srr_nl0",-0.434,4.35,1.05],
+			["srr_nl1",-0.434,4.35,1.55],
+			["srr_nl4",-0.934,4.35,1.05],
+			["srr_nl5",-0.934,4.35,1.55],
+			["srr_n2",-0.934,-0.65,1.05],
+			["srr_n3",-0.934,-0.65,1.55],
 		 {"group":""},
 	]
 	"beams": [
@@ -34,30 +34,30 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
 		  {"breakGroup":"support_rr"}
-		  	["f31r","srr_n2"],
+		  	["f37r","srr_n2"],
 			["srr_nl4","srr_nl0"],
 			["srr_nl5","srr_nl1"],
 			["srr_nl4","srr_n2"],
-			["srr_nl4","f31r"],
+			["srr_nl4","f37r"],
 			["srr_nl0","srr_n2"],
-			["srr_nl5","fw11r"],
+			["srr_nl5","fw3r"],
 			["srr_n2","srr_nl5"],
 			["srr_n3","srr_nl1"],
-			["fw11r","srr_nl1"],
+			["fw3r","srr_nl1"],
 			["srr_nl5","srr_nl0"],
-			["srr_nl0","fw11r"],
+			["srr_nl0","fw3r"],
 			["srr_nl4","srr_nl5"],
 			["srr_nl1","srr_nl4"],
 			["srr_nl4","srr_n3"],
 			["srr_nl0","srr_nl1"],
-			["f31r","srr_nl0"],
-			["fw11r","f31r"],
-			["f31r","srr_nl1"],
+			["f37r","srr_nl0"],
+			["fw3r","f37r"],
+			["f37r","srr_nl1"],
 			["srr_n3","srr_n2"],
-			["fw11r","srr_n3"],
+			["fw3r","srr_n3"],
 			["srr_nl5","srr_n3"],			
-			["srr_n3","f31r"],
-			["srr_n2","fw11r"],
+			["srr_n3","f37r"],
+			["srr_n2","fw3r"],
 			["srr_nl1","framework_4_1_1"],
 			["srr_nl5","framework_4_1_1"],
 			{"breakGroup":""}
@@ -136,19 +136,19 @@
 			["id1:","id2:"],		    
 			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},			
 			{"breakGroup":"support_rr"},
-			["srr_n2","cw11", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],//
+			["srr_n2","f32", {"inputSource":"supports_tilt","inLimit":0.5,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],//
 
 			["srr_Move_nl5","srr_n2", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["srr_Move_nl4","srr_n3", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["srr_Move_nl7","f31r", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["srr_Move_nl6","fw11r", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["srr_Move_nl7","f37r", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["srr_Move_nl6","fw3r", {"inputSource":"supports_r","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			{"breakGroup":""},
 			{"beamPrecompression":1},
 	],
 	"rails": {		  
-		  "Rail_rr1":{"links:":["srr_nl1", "fw11r"], "looped":false, "capped":true}
+		  "Rail_rr1":{"links:":["srr_nl1", "fw3r"], "looped":false, "capped":true}
 		  "Rail_rr2":{"links:":["srr_nl5", "srr_n3"], "looped":false, "capped":true}
-		  "Rail_rr3":{"links:":["srr_nl0", "f31r"], "looped":false, "capped":true}
+		  "Rail_rr3":{"links:":["srr_nl0", "f37r"], "looped":false, "capped":true}
 		  "Rail_rr4":{"links:":["srr_nl4", "srr_n2"], "looped":false, "capped":true}		  
 	},
 	"slidenodes": [	
