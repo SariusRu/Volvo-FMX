@@ -1,16 +1,16 @@
 {
 "volvofmx_axle_R2": {
 	"information":{
-		"authors":"Jalkku",
-		"name":"volvofmx rear 2 Axle",
+		"authors":"Sarius",
+		"name":"Rear Rear Axle",
 	}
     "slotType" : "volvofmx_axle_R2",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_shock_R2","volvofmx_shock_R2", "volvofmx Rear 2 Shocks+airbags"],
-		["volvofmx_brake_R2","volvofmx_brake_R2", "volvofmx Rear 2 Brakes"],
-		["volvofmx_wheel_R2","volvofmx_wheel_R2", "volvofmx Rear 2 Wheels"],
-		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Long Driveshaft"],
+		["volvofmx_shock_R2","volvofmx_shock_R2", "Rear Rear Shocks + Airbags"],
+		["volvofmx_brake_R2","volvofmx_brake_R2", "Rear Rear Brakes"],
+		["volvofmx_wheel_R2","volvofmx_wheel_R2", "Rear Rear Wheels"],
+		["volvofmx_intershaft_rear","volvofmx_intershaft_rear", "Rear Intershaft"],
         ["volvofmx_differential_R_2","volvofmx_differential_R_2", "Rear Rear Differential"],
 	],
 	"scalebeamSpring":0.80,
@@ -132,27 +132,18 @@
             {"brakeType":false},
             {"rotorMaterial":false},
             {"brakeVentingCoef":false},
-    ],
-	"triangles": [
-			["id1:","id2:","id3:"],
-			{"group":""},				
-	],
+    ],	
 }
 "volvofmx_shock_R2": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx second rear Shocks",
+		"name":"Rear Rear Shocks",
 	}
     "slotType" : "volvofmx_shock_R2",
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_shock_R2", ["volvofmx_shockbottom_R2","volvofmx_shocktop_R2"]],
-		 ["volvofmx_airbag_R2", ["volvofmx_shockbottom_R2","volvofmx_shocktop_R2"]],
-	 ],
+	"scalebeamStrength":1.15,	
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 	],

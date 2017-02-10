@@ -219,7 +219,7 @@
 "volvofmx_differential_R_1": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Rear Differential",
         "value":900,
     }
     "slotType" : "volvofmx_differential_R_1",
@@ -233,7 +233,7 @@
 "volvofmx_differential_R_2": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Rear Rear Differential",
         "value":900,
     }
     "slotType" : "volvofmx_differential_R_2",
@@ -247,7 +247,7 @@
 "volvofmx_intershaft_rear": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Rear Intershaft",
         "value":900,
     }
     "slotType" : "volvofmx_intershaft_rear",
@@ -262,7 +262,7 @@
 "volvofmx_differential_F_1": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Front Differential",
         "value":900,
     }
     "slotType" : "volvofmx_differential_F_1",
@@ -276,7 +276,7 @@
 "volvofmx_differential_F_2": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Rear Front Differential",
         "value":900,
     }
     "slotType" : "volvofmx_differential_F_2",
@@ -290,7 +290,7 @@
 "volvofmx_intershaft_front": {
     "information":{
         "authors":"BeamNG",
-        "name":"Locking Inter Axle Transfer Case",
+        "name":"Front Intershaft",
         "value":900,
     }
     "slotType" : "volvofmx_intershaft_front",

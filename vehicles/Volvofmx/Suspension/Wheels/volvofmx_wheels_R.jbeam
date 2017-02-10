@@ -2,7 +2,7 @@
 "volvofmx_wheel_R": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx Rear Wheels",
+		"name":"Rear Wheels",
 	}
 	"variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -31,7 +31,7 @@
 			{"hubRadius":0.30},
 			{"wheelOffset":-0.02},
 			{"hubWidth":0.305},
-			{"tireWidth":0.275},
+			{"tireWidth":0.45},
 			{"numRays":18},
 			
 
@@ -60,7 +60,7 @@
             //general tire values
             {"nodeWeight":1.52},
             {"nodeMaterial":"|NM_RUBBER","hasTire":true},
-            {"frictionCoef":1.05},
+            {"frictionCoef":1.35},
             {"triangleCollision":true},
             {"pressurePSI":"$tirepressure_R"},
             {"dragCoef":20},

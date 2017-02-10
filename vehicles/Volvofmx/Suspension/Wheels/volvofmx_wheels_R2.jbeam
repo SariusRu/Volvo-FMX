@@ -2,7 +2,7 @@
 "volvofmx_wheel_R2": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx second Rear Wheels",
+		"name":"Rear Rear Wheels",
 	}
 	"variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -12,19 +12,7 @@
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"nodes": [
-		["id", "posX", "posY", "posZ"],
-		 {"selfCollision":false}
-		 {"collision":true}
-		 //frame
-		 {"nodeWeight":12},
-		 {"frictionCoef":0.7},
-		 {"nodeMaterial":"|NM_METAL"},
-
-		 {"group":""}
-		 
-	]
+	"scalebeamStrength":1.15,	
 	"beams": [
 		  ["id1:", "id2:", "options"],
 		  {"beamSpring":19001000,"beamDamp":300},
@@ -43,7 +31,7 @@
 			{"hubRadius":0.30},
 			{"wheelOffset":-0.02},
 			{"hubWidth":0.305},
-			{"tireWidth":0.275},
+			{"tireWidth":0.45},
 			{"numRays":18},
 			
 
@@ -72,7 +60,7 @@
             //general tire values
             {"nodeWeight":1.52},
             {"nodeMaterial":"|NM_RUBBER","hasTire":true},
-            {"frictionCoef":1.05},
+            {"frictionCoef":1.35},
             {"triangleCollision":true},
             {"pressurePSI":"$tirepressure_R"},
             {"dragCoef":20},

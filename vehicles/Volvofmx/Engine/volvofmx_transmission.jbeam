@@ -21,11 +21,7 @@
         "transmissionShiftDelay":0.15,
         "lowShiftDownRPM":1000,
         "lowShiftUpRPM":1500,
-    },
-    "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
-         ["volvofmx_transmission", ["volvofmx_transmission"]],
-    ],
+    },    
     "nodes": [
          ["id", "posX", "posY", "posZ"],
          {"selfCollision":true}

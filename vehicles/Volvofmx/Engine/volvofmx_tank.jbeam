@@ -15,10 +15,6 @@
         "fuelCapacity": 450,
         "fuel": {"[engineGroup]:":["fuel"]},
     }
-    "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
-         ["volvofmx_fueltank_R", ["volvofmx_fueltank_R"]],
-     ],
 }
 "volvofmx_fueltank_L": {
     "information":{
@@ -35,10 +31,6 @@
         "energyType":"gasoline",
         "fuelCapacity": 450,
         "fuel": {"[engineGroup]:":["fuel"]},
-    }
-    "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
-         ["volvofmx_fueltank_R", ["volvofmx_fueltank_R"]],
-     ],
+    }    
 }
 }
