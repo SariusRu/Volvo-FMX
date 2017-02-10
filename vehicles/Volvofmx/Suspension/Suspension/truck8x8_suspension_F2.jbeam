@@ -7,22 +7,17 @@
     "slotType" : "volvofmx_axle_F2",
 	"slots": [
 		["type", "default", "description"]
-		["volvofmx_steering2","volvofmx_steering2", "volvofmx Steering2"],
-		["volvofmx_shock_F2","volvofmx_shock_F2", "volvofmx Front2 Shocks+airbags"],
-		["volvofmx_brake_F2","volvofmx_brake_F2", "volvofmx Front2 Brakes"],
-		["volvofmx_wheel_F2","volvofmx_wheel_F2", "volvofmx Front2 Wheels"],
-		["volvofmx_differential_F_2","volvofmx_differential_F_2", "Front Differential"],
+		["volvofmx_steering2","volvofmx_steering2", "Rear Front Steering"],
+		["volvofmx_shock_F2","volvofmx_shock_F2", "Rear Front Shocks + airbags"],
+		["volvofmx_brake_F2","volvofmx_brake_F2", "Rear Front Brakes"],
+		["volvofmx_wheel_F2","volvofmx_wheel_F2", "Rear Front Wheels"],
+		["volvofmx_differential_F_2","volvofmx_differential_F_2", "Rear Front Differential"],
 	],
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
 	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_axle_F2", ["volvofmx_axle_F2","volvofmx_shockbottom_F2"]],
-		 ["volvofmx_arm_F2", ["volvofmx_armattach_F2","volvofmx_axle_F2"]],
-	 ],
-	 
+	
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 		 {"selfCollision":false}
@@ -202,13 +197,7 @@
 		  ["f2h3l","f2a3r"],
 		  ["f2h3l","f2a4r"],
 		  {"breakGroup":""},
-	],
-	"hubWheels": [
-			["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-			{"propulsed":0},
-			{"brakeTorque":0},
-			{"parkingTorque":0},
-	],
+	],	
 	"triangles": [
 			["id1:","id2:","id3:"],
 			{"group":""},	
@@ -217,18 +206,13 @@
 "volvofmx_shock_F2": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx second Front Shocks",
+		"name":"Rear Front Shocks",
 	}
     "slotType" : "volvofmx_shock_F2",
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_shock_F2", ["volvofmx_shockbottom_F2","volvofmx_shocktop_F2"]],
-		 ["volvofmx_airbag_F2", ["volvofmx_shockbottom_F2","volvofmx_shocktop_F2"]],
-	 ],
+	"scalebeamStrength":1.15,	
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 	],
@@ -244,39 +228,16 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
 }
-"volvofmx_brake_F2": {
-	"information":{
-		"authors":"Jalkku",
-		"name":"volvofmx second Front Brakes",
-	}
-    "slotType" : "volvofmx_brake_F2",
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-
-	 ],
-	"hubWheels": [
-			["name","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
-			{"enableABS":true}
-			{"ABSthreshold":1}
-			{"brakeTorque":20000},
-			{"parkingTorque":0},
-	],
-}
 "volvofmx_steering2": {
 	"information":{
 		"authors":"Jalkku",
-		"name":"volvofmx front second Steering",
+		"name":"Rear Front Steering",
 	}
     "slotType" : "volvofmx_steering2",
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 //tie rod
-		 ["volvofmx_tierod", ["volvofmx_hub_a_F","volvofmx_hub_b_F"]],
-	],
+	"scalebeamStrength":1.15,	
 	"hydros": [
 			["id1:","id2:"],
 		    //{"breakGroupType":1},

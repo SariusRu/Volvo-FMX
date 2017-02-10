@@ -5,17 +5,12 @@
         "name":"Front Brakes",
         "value":1000,
     }
-    "slotType" : "volvofmx_brake_F",    
-    "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
-         //brake drums
-         ["volvofmx_brakedrum_F", ["wheel_FL","wheel_FR","wheelhub_FR","wheelhub_FL"]],
-    ],
+    "slotType" : "volvofmx_brake_F",
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
         //brakes
-        {"brakeTorque":40000},
-        {"parkingTorque":40000},
+        {"brakeTorque":8000},
+        {"parkingTorque":8000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -33,20 +28,15 @@
 "volvofmx_brake_F2": {
     "information":{
         "authors":"BeamNG",
-        "name":"Front Brakes",
+        "name":"Rear Front Brakes",
         "value":1000,
     }
-    "slotType" : "volvofmx_brake_F2",    
-    "flexbodies": [
-         ["mesh", "[group]:", "nonFlexMaterials"],
-         //brake drums
-         ["volvofmx_brakedrum_F", ["wheel_FL","wheel_FR","wheelhub_FR","wheelhub_FL"]],
-    ],
+    "slotType" : "volvofmx_brake_F2",   
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
         //brakes
-        {"brakeTorque":40000},
-        {"parkingTorque":40000},
+        {"brakeTorque":7000},
+        {"parkingTorque":7000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -71,8 +61,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":400000},
-        {"parkingTorque":40000},
+        {"brakeTorque":10000},
+        {"parkingTorque":10000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -95,10 +85,10 @@
     }
     "slotType" : "volvofmx_brake_R2",
     "pressureWheels": [
-        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":40000},
-        {"parkingTorque":40000},
+        {"brakeTorque":11000},
+        {"parkingTorque":11000},
         {"brakeSpring":100},
             
         //brake thermals

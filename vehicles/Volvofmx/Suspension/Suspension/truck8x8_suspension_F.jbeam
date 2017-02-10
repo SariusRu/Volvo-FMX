@@ -18,13 +18,7 @@
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_axle_F", ["volvofmx_axle_F","volvofmx_shockbottom_F"]],
-		 ["volvofmx_arm_F", ["volvofmx_armattach_F","volvofmx_axle_F"]],
-	 ],
-	 
+	"scalebeamStrength":1.15,	
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 		 {"selfCollision":false}
@@ -229,12 +223,7 @@
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 ["volvofmx_shock_F", ["volvofmx_shockbottom_F","volvofmx_shocktop_F"]],
-		 ["volvofmx_airbag_F", ["volvofmx_shockbottom_F","volvofmx_shocktop_F"]],
-	 ],
+	"scalebeamStrength":1.15,	
 	"nodes": [
 		 ["id", "posX", "posY", "posZ"],
 	],
@@ -259,12 +248,7 @@
 	"scalebeamSpring":0.80,
 	"scalebeamDamp":0.80,
 	"scalebeamDeform":1.15,
-	"scalebeamStrength":1.15,
-	"flexbodies": [
-		 ["mesh", "[group]:", "nonFlexMaterials"],
-		 //tie rod
-		 ["volvofmx_tierod", ["volvofmx_hub_a_F","volvofmx_hub_b_F"]],
-	],
+	"scalebeamStrength":1.15,	
 	"hydros": [
 			["id1:","id2:"],
 		    //{"breakGroupType":1},
