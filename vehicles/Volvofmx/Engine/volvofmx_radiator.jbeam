@@ -93,17 +93,6 @@
             {"breakGroup":""},
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 
-    ],
-    "triangles": [
-            ["id1:","id2:","id3:"],
-            {"group":"volvofmx_radiator"},
-            {"groundModel":"metal"},
-            {"dragCoef":4},
-            ["ra2","rar5","rar4"],
-            ["ra2","ra3","rar5"],
-            ["ral0","ra3","ra2"],
-            ["ral0","ral1","ra3"],
-            {"group":""},
-    ],
+    ],   
 }
 }

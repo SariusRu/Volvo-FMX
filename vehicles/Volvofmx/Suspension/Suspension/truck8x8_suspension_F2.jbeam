@@ -198,10 +198,6 @@
 		  ["f2h3l","f2a4r"],
 		  {"breakGroup":""},
 	],	
-	"triangles": [
-			["id1:","id2:","id3:"],
-			{"group":""},	
-	],
 }
 "volvofmx_shock_F2": {
 	"information":{

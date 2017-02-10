@@ -31,33 +31,26 @@
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 		  {"beamDeform":200000,"beamStrength":"FLT_MAX"},
 		  {"breakGroup":"support_fl"},
-		  	["f21l","fw5l"],
-			["sfl3","sfl1"],
-			["sfl4","sfl2"],
-			["sfl3","fw5l"],
-			["sfl3","f21l"],
-			["sfl1","fw5l"],
-			["sfl4","fw1l"],
-			["fw5l","sfl4"],
-			["fw6l","sfl2"],
-			["fw1l","sfl2"],
-			["sfl4","sfl1"],
-			["sfl1","fw1l"],
-			["sfl3","sfl4"],
-			["sfl2","sfl3"],
-			["sfl3","fw6l"],
-			["sfl1","sfl2"],
-			["f21l","sfl1"],
-			["fw1l","f21l"],
-			["f21l","sfl2"],
-			["fw6l","fw5l"],
-			["fw1l","fw6l"],
-			["sfl4","fw6l"],
-			["sfl2","f21l"],
-			["sfl4","f21l"],
-			{"breakGroup":""},
-			["sfl2","fw3l"],
-			["sfl4","fw3l"],	  
+		  ["sfl2","fw1l"],
+		  ["sfl2","fw2l"],
+		  ["sfl2","f21l"],
+		  ["sfl2","sfl4"],
+		  ["sfl2","sfl3"],
+		  ["sfl2","sfl1"],
+		  ["sfl4","fw2l"],
+		  ["sfl4","fw1l"],
+		  ["sfl4","f69l"],
+		  ["sfl4","sfl3"],
+		  ["sfl4","sfl1"],
+		  ["sfl1","fw1l"],
+		  ["sfl1","f21l"],
+		  ["sfl1","f69l"],
+		  ["sfl1","sfl3"],
+		  ["sfl3","f69l"],
+		  ["sfl3","f21l"],
+		  ["sfl3","fw2r"],
+		  	
+			{"breakGroup":""},			  
 	],
 }
 "volvofmx_move_fl": {
@@ -126,13 +119,15 @@
 			["sfl5","sfl12"],
 			["sfl9","sfl8"],
 		  {"breakGroup":""}
+		  ["sfl2","fw4l"],
+		  ["sfl4","fw5l"],
 	],
 	"hydros": [
 			["id1:","id2:"],		    
 			{"beamSpring":20001000,"beamDamp":250,"beamDeform":120000000,"beamStrength":160000000},			
 			{"breakGroup":"support_fl"},
-			["sfl8","fw5l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
-			["sfl7","fw6l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfl8","f69l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
+			["sfl7","fw2l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["sfl12","f21l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			["sfl11","fw1l", {"inputSource":"supports_f","inLimit":20,"outLimit":0,"inRate":15,"outRate":8,"inputFactor":2.0}],
 			{"breakGroup":""},
@@ -140,9 +135,9 @@
 	],
 	"rails": {		  
 		  "Rail_fl1":{"links:":["sfl2", "fw1l"], "looped":false, "capped":true}
-		  "Rail_fl2":{"links:":["sfl4", "fw6l"], "looped":false, "capped":true}
+		  "Rail_fl2":{"links:":["sfl4", "fw2l"], "looped":false, "capped":true}
 		  "Rail_fl3":{"links:":["sfl1", "f21l"], "looped":false, "capped":true}
-		  "Rail_fl4":{"links:":["sfl3", "fw5l"], "looped":false, "capped":true}
+		  "Rail_fl4":{"links:":["sfl3", "f69l"], "looped":false, "capped":true}
 	},	
 	"slidenodes": [	
 		 ["id:", "railName", "attached", "fixToRail", "tolerance", "spring", "strength", "capStrength"],		 

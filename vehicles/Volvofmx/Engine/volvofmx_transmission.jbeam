@@ -115,13 +115,6 @@
             ["tnl4","f35"],
             ["tnr7","f35"],
             ["tnr7","f36l"],
-    ],
-    "triangles": [
-            ["id1:","id2:","id3:"],
-            {"group":"volvofmx_engine"},
-            {"groundModel":"metal"},
-            {"dragCoef":3},
-            {"group":""},
-    ],
+    ],    
 }
 }
