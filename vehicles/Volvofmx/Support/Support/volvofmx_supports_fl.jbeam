@@ -119,6 +119,8 @@
 			["sfl5","sfl12"],
 			["sfl9","sfl8"],
 		  {"breakGroup":""}
+		  ["sfl2","fw4l"],
+		  ["sfl4","fw5l"],
 	],
 	"hydros": [
 			["id1:","id2:"],		    

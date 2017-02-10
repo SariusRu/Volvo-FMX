@@ -61,6 +61,9 @@
 			["srr_nl1","framework_4_1_1"],
 			["srr_nl5","framework_4_1_1"],
 			{"breakGroup":""}
+			//
+			["srr_nl1","fw6r"],
+			["srr_nl5","fw6r"],
 		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
 	],
 }

@@ -227,25 +227,6 @@
           ["en2l","dc10ll"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
     ],
-    "triangles": [
-            ["id1:","id2:","id3:"],
-            {"dragCoef":3},
-            {"groundModel":"metal"},
-            {"group":"volvofmx_engine"},
-            ["en4r","en2r","en1r"],
-            ["en4r","en1r","en3r"],
-            ["en4l","en1l","en2l"],
-            ["en4l","en3l","en1l"],
-            ["en4r","en3r","en3l"],
-            ["en4r","en3l","en4l"],
-            ["en3r","en1r","en1l"],
-            ["en3r","en1l","en3l"],
-            ["en4r","en2l","en2r"],
-            ["en4r","en4l","en2l"],
-            ["en1l", "en2r", "en2l"],
-            ["en1l", "en1r", "en2r"],
-            {"group":""},
-    ],
 }
 }
 }

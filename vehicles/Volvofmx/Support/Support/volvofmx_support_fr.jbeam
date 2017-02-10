@@ -211,10 +211,12 @@
 			["sfr18","sfr17"],
 			["sfr17","sfr19"],
 			["sfr21","sfr19"],
-			["sfr18","sfr20"],			
-		  {"breakGroup":""},
-		  	["sfr4","fw4r"],
+			["sfr18","sfr20"],
+			{"breakGroup":""},
 			["sfr2","fw4r"],
+			["sfr4","fw5r"],
+
+		  
 	],
 	"hydros": [
 			["id1:","id2:"],
