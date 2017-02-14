@@ -3,6 +3,7 @@
 -- file, You can obtain one at http://beamng.com/bCDDL-1.1.txt
 
 local M = {}
+local reachEnd
 
 local function onReset()
     electrics.values['supports_f'] = 0
@@ -19,9 +20,16 @@ local function onReset()
     electrics.values['hydros_rl_input'] = 0
     electrics.values['hydros_rr'] = 0
     electrics.values['hydros_rr_input'] = 0
+    electrics.values['crane_turn'] = 0
+    electrics.values['crane_turn_input'] = 0
+    electrics.values['main_crane_height'] = 0
+    electrics.values['main_crane_height_input'] = 0
+    electrics.values['main_crane_extend'] = 0
+    electrics.values['main_crane_extend_input'] = 0
 end
 
 local function updateGFX(dt)
+    print("Hello World")
     electrics.values['supports_f'] = math.min(1, math.max(-0.0, (electrics.values['supports_f'] + electrics.values['supports_f_input'] * dt * 0.008)))
     electrics.values['hydros_fl'] = math.min(1, math.max(-0.0, (electrics.values['hydros_fl'] + electrics.values['hydros_fl_input'] * dt * 0.008)))
     electrics.values['hydros_fr'] = math.min(1, math.max(-0.0, (electrics.values['hydros_fr'] + electrics.values['hydros_fr_input'] * dt * 0.008)))
@@ -29,7 +37,12 @@ local function updateGFX(dt)
     electrics.values['supports_r'] = math.min(1, math.max(-0.0, (electrics.values['supports_r'] + electrics.values['supports_r_input'] * dt * 0.008)))
     electrics.values['hydros_rl'] = math.min(1, math.max(-0.0, (electrics.values['hydros_rl'] + electrics.values['hydros_rl_input'] * dt * 0.008)))
     electrics.values['hydros_rr'] = math.min(1, math.max(-0.0, (electrics.values['hydros_rr'] + electrics.values['hydros_rr_input'] * dt * 0.008)))
+    electrics.values['crane_turn'] = math.min(1, math.max(-0.0, (electrics.values['crane_turn'] + electrics.values['crane_turn_input'] * dt * 0.008)))
+    electrics.values['main_crane_height'] = math.min(1, math.max(-0.0, (electrics.values['main_crane_height'] + electrics.values['main_crane_height_input'] * dt * 0.008)))
+    electrics.values['main_crane_extend'] = math.min(1, math.max(-0.0, (electrics.values['main_crane_extend_input'] + electrics.values['main_crane_height_input'] * dt * 0.008)))
 end
+
+
 
 -- public interface
 M.onInit    = onReset
