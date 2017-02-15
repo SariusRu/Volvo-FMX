@@ -26,10 +26,10 @@ local function onReset()
     electrics.values['main_crane_height_input'] = 0
     electrics.values['main_crane_extend'] = 0
     electrics.values['main_crane_extend_input'] = 0
+    print("Hello World")
 end
 
-local function updateGFX(dt)
-    print("Hello World")
+local function updateGFX(dt)    
     electrics.values['supports_f'] = math.min(1, math.max(-0.0, (electrics.values['supports_f'] + electrics.values['supports_f_input'] * dt * 0.008)))
     electrics.values['hydros_fl'] = math.min(1, math.max(-0.0, (electrics.values['hydros_fl'] + electrics.values['hydros_fl_input'] * dt * 0.008)))
     electrics.values['hydros_fr'] = math.min(1, math.max(-0.0, (electrics.values['hydros_fr'] + electrics.values['hydros_fr_input'] * dt * 0.008)))
