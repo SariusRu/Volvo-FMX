@@ -39,7 +39,7 @@ local function updateGFX(dt)
     electrics.values['hydros_rr'] = math.min(1, math.max(-0.0, (electrics.values['hydros_rr'] + electrics.values['hydros_rr_input'] * dt * 0.008)))
     electrics.values['crane_turn'] = math.min(1, math.max(-0.0, (electrics.values['crane_turn'] + electrics.values['crane_turn_input'] * dt * 0.008)))
     electrics.values['main_crane_height'] = math.min(1, math.max(-0.0, (electrics.values['main_crane_height'] + electrics.values['main_crane_height_input'] * dt * 0.008)))
-    electrics.values['main_crane_extend'] = math.min(1, math.max(-0.0, (electrics.values['main_crane_extend_input'] + electrics.values['main_crane_height_input'] * dt * 0.008)))
+    electrics.values['main_crane_extend'] = math.min(1, math.max(-0.0, (electrics.values['main_crane_extend'] + electrics.values['main_crane_extend_input'] * dt * 0.008)))
 end
 
 

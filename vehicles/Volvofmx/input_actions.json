@@ -19,6 +19,6 @@
 "volvofmx_crane_return":  {"order":  16, "onChange":"electrics.values.crane_turn_input = -10 * VALUE", "title": "Return Crane", "desc": "Turns the Main Crane" },
 "volvofmx_crane_up":  {"order":  17, "onChange":"electrics.values.main_crane_height_input = 5*VALUE", "title": "Crane Up", "desc": "" },
 "volvofmx_crane_down":  {"order":  18, "onChange":"electrics.values.main_crane_height_input = -5*VALUE", "title": "Crane Down", "desc": "" },
-"volvofmx_crane_extend":  {"order":  17, "onChange":"electrics.values.main_crane_extend_input = VALUE", "title": "Crane Extend", "desc": "" },
-"volvofmx_crane_retract":  {"order":  18, "onChange":"electrics.values.main_crane_extend_input = -VALUE", "title": "Crane Retract", "desc": "" },
+"volvofmx_crane_extend":  {"order":  17, "onChange":"electrics.values.main_crane_extend_input = 5*VALUE", "title": "Crane Extend", "desc": "" },
+"volvofmx_crane_retract":  {"order":  18, "onChange":"electrics.values.main_crane_extend_input = -5*VALUE", "title": "Crane Retract", "desc": "" },
 }
