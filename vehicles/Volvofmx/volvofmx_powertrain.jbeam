@@ -157,7 +157,7 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "transfercase_main", "driveshaft", 1, {"breakTriggerBeam":"transfercase_main","diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "transfercase_main", "driveshaft", 1, {"breakTriggerBeam":"transfercase_main","diffType":["locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_driveshaft_fr": {
@@ -227,7 +227,7 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "differentialR1", "transfercase_rear", 1, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "differentialR1", "transfercase_rear", 1, {"diffType":["open","locked"],"gearRatio":2.7, "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_differential_R_2": {
@@ -241,7 +241,7 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "differentialR2", "intershaft_rear", 1, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "differentialR2", "intershaft_rear", 1, {"diffType":["open","locked"],"gearRatio":2.7, "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_intershaft_rear": {
@@ -270,7 +270,7 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "differentialF1", "intershaft_front", 1, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "differentialF1", "intershaft_front", 1, {"diffType":["open","locked"],"gearRatio":2.7, "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_differential_F_2": {
@@ -284,7 +284,7 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["differential", "differentialF2", "transfercase_front", 1, {"diffType":["open","locked"], "lockTorque":100000, "lockTorque":100000, "friction":15}]
+        ["differential", "differentialF2", "transfercase_front", 1, {"diffType":["open","locked"],"gearRatio":2.7, "lockTorque":100000, "lockTorque":100000, "friction":15}]
     ],
 }
 "volvofmx_intershaft_front": {
