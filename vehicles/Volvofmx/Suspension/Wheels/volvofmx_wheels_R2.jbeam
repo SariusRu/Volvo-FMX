@@ -6,7 +6,7 @@
 	}
 	"variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
-        ["$tirepressure_R2", "range", "psi", "Tires", 40, 0, 120, "Rear 2 Tire Pressure", "Relative to atmospheric pressure"]
+        ["$tirepressure_R2", "range", "psi", "Tires", 70, 0, 120, "Rear 2 Tire Pressure", "Relative to atmospheric pressure"]
     ],
     "slotType" : "volvofmx_wheel_R2",
 	"scalebeamSpring":0.80,
