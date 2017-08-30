@@ -9,8 +9,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
         //brakes
-        {"brakeTorque":8000},
-        {"parkingTorque":8000},
+        {"brakeTorque":20000},
+        {"parkingTorque":20000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -35,8 +35,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],        
         //brakes
-        {"brakeTorque":7000},
-        {"parkingTorque":7000},
+        {"brakeTorque":20000},
+        {"parkingTorque":20000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -61,8 +61,8 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":10000},
-        {"parkingTorque":10000},
+        {"brakeTorque":20000},
+        {"parkingTorque":20000},
         {"brakeSpring":100},
             
         //brake thermals
@@ -87,15 +87,15 @@
     "pressureWheels": [
         ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
         //brakes
-        {"brakeTorque":11000},
-        {"parkingTorque":11000},
+        {"brakeTorque":20000},
+        {"parkingTorque":20000},
         {"brakeSpring":100},
             
         //brake thermals
         {"enableBrakeThermals":true},
         {"brakeDiameter":0.42},
         {"brakeMass":40.0},
-        {"brakeType":"drum"},
+        {"brakeType":"disc"},
         {"rotorMaterial":"steel"},
         {"brakeVentingCoef":1.0},
     ],

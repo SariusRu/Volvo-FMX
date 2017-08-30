@@ -197,7 +197,19 @@
 		  ["f2h3l","f2a3r"],
 		  ["f2h3l","f2a4r"],
 		  {"breakGroup":""},
-	],	
+	],
+		"pressureWheels": [
+            ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+            //cancel out brake properties
+            {"brakeTorque":0},
+            {"parkingTorque":0},
+            {"enableBrakeThermals":false},
+            {"brakeDiameter":false},
+            {"brakeMass":false},
+            {"brakeType":false},
+            {"rotorMaterial":false},
+            {"brakeVentingCoef":false},
+    ],		
 }
 "volvofmx_shock_F2": {
 	"information":{

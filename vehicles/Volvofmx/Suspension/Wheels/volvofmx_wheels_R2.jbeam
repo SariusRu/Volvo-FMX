@@ -62,7 +62,7 @@
             {"nodeMaterial":"|NM_RUBBER","hasTire":true},
             {"frictionCoef":1.35},
             {"triangleCollision":true},
-            {"pressurePSI":"$tirepressure_R"},
+            {"pressurePSI":"$tirepressure_R2"},
             {"dragCoef":20},
 
 			{"selfCollision":true}
