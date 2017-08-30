@@ -171,8 +171,8 @@
     "powertrain" : [
         ["type", "name", "inputName", "inputIndex"]
         //lockable diff between front rear and rear rear diff
-        ["shaft", "driveshaft_f", "transfercase_main", 1,{"breakTriggerBeam":"driveshaft_f", "electricsName":"driveshaft_f", "friction":2}]
-        ["shaft", "driveshaft_r", "transfercase_main", 2,{"breakTriggerBeam":"driveshaft_r", "electricsName":"driveshaft_r", "friction":2}]
+        ["shaft", "driveshaft_f", "transfercase_main", 1,{"canDisconnect":true, "breakTriggerBeam":"driveshaft_f", "electricsName":"driveshaft_f", "friction":2}]
+        ["shaft", "driveshaft_r", "transfercase_main", 2,{"canDisconnect":true, "breakTriggerBeam":"driveshaft_r", "electricsName":"driveshaft_r", "friction":2}]
     ],
     "beams": [
           ["id1:", "id2:"],
